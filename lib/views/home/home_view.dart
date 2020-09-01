@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:satyam_website/widgets/navigation_bar/navigation_bar.dart';
 import 'package:satyam_website/widgets/centered_view/centered_view.dart';
+import 'package:satyam_website/widgets/my_details/my_details.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key key}) : super(key: key);
@@ -48,6 +49,14 @@ class _HomeView extends State<HomeView> with SingleTickerProviderStateMixin {
               child: Column(
                 children: <Widget>[
                   NavigationBar(),
+                  Expanded(
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          MyDetails(),
+                        ]),
+                  )
                 ],
               ),
             ),
