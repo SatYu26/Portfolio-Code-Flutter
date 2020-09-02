@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:satyam_website/Colors/colors.dart';
 
 class NavigationBar extends StatelessWidget {
 
@@ -41,7 +42,7 @@ class _NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18, color: Colors.red),
+      style: TextStyle(fontSize: 18, color: Coolors.navBarColor),
     );
   }
 }
