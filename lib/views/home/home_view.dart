@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:satyam_website/widgets/navigation_bar/navigation_bar.dart';
 import 'package:satyam_website/widgets/centered_view/centered_view.dart';
-import 'package:satyam_website/widgets/my_details/my_details.dart';
+import 'package:satyam_website/widgets/name_widget/name_widget.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:satyam_website/Colors/colors.dart';
+import 'package:satyam_website/widgets/Introduction/introduction.dart';
 
 class HomeView extends StatelessWidget {
+  const HomeView({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Coolors.primaryColor,
-      child: new Stack(
+    return Scaffold(
+      backgroundColor: Coolors.primaryColor,
+      body: new Stack(
         fit: StackFit.expand,
         children: <Widget>[
           PictureWidget(),
@@ -21,7 +23,12 @@ class HomeView extends StatelessWidget {
                   NavigationBar(),
                   Expanded(
                     child: Row(children: [
-                      HeaderScreen(),
+                      NameWidget(),
+                      Expanded(
+                        child: Center(
+                          child: IntroductionWidget(),
+                        ),
+                      )
                     ]),
                   ),
                 ]

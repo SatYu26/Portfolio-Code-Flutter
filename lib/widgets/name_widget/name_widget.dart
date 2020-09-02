@@ -5,8 +5,8 @@ import 'package:satyam_website/Colors//colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class HeaderScreen extends StatelessWidget {
-  const HeaderScreen({Key key}) : super(key: key);
+class NameWidget extends StatelessWidget {
+  const NameWidget({Key key}) : super(key: key);
 
 
   @override
@@ -50,46 +50,6 @@ class HeaderScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class IntroductionWidget extends StatelessWidget {
-  const IntroductionWidget({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return VStack(
-      [
-        [
-          " - Introduction".text.gray500.widest.sm.make(),
-          10.heightBox,
-          "Blah Blah Blah Blah Blah"
-              .text
-              .white
-              .xl3
-              .maxLines(5)
-              .make()
-              .w(context.isMobile
-              ? context.screenWidth
-              : context.percentWidth * 40),
-          20.heightBox,
-        ].vStack(),
-        RaisedButton(
-          onPressed: () {
-            launch("https://mtechviral.com");
-          },
-          hoverColor: Vx.purple700,
-          shape: Vx.roundedSm,
-          color: Coolors.accentColor,
-          textColor: Coolors.primaryColor,
-          child: "Visit mtechviral.com".text.make(),
-        ).h(50)
-      ],
-      // crossAlignment: CrossAxisAlignment.center,
-      alignment: MainAxisAlignment.spaceEvenly,
     );
   }
 }
