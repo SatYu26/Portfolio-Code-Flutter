@@ -8,13 +8,15 @@ class IntroductionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double c_width = MediaQuery.of(context).size.width*0.5;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+      padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+      width: c_width,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Introduction(),
+          Flexible(child: Introduction()),
         ],
       ),
     );
@@ -33,7 +35,7 @@ class Introduction extends StatelessWidget {
         [
           " - Introduction".text.gray500.widest.sm.make(),
           10.heightBox,
-          "Blah Blah Blah Blah Blah"
+          "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
               .text
               .white
               .xl3
@@ -44,6 +46,18 @@ class Introduction extends StatelessWidget {
               : context.percentWidth * 40),
           20.heightBox,
         ].vStack(),
+        SizedBox(
+          height: 5,
+        ),
+        VxBox()
+            .color(Coolors.accentColor)
+            .size(60, 10)
+            .make()
+            .px4()
+            .shimmer(primaryColor: Coolors.accentColor),
+        SizedBox(
+          height: 20,
+        ),
         RaisedButton(
           onPressed: () {
             launch("https://mtechviral.com");
@@ -53,7 +67,8 @@ class Introduction extends StatelessWidget {
           color: Coolors.accentColor,
           textColor: Coolors.primaryColor,
           child: "Resume".text.make(),
-        ).h(50)
+        ).h(50),
+
       ],
       // crossAlignment: CrossAxisAlignment.center,
       alignment: MainAxisAlignment.spaceEvenly,

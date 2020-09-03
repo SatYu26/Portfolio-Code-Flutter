@@ -11,7 +11,7 @@ class NameWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final nameWidget = "Satyam\nGoyal."
+    final SNameWidget = "Satyam\nGoyal."
         .text
         .white
         .xl6
@@ -33,7 +33,7 @@ class NameWidget extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-              nameWidget,
+              SNameWidget,
             SizedBox(
               height: 30,
             ),
