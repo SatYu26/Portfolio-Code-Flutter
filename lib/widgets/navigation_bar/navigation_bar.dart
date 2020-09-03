@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:satyam_website/Colors/colors.dart';
-import 'package:satyam_website/widgets/navigation_bar/navbar_item.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:satyam_website/widgets/navigation_bar/navigation_bar_tablet_desktop.dart';
 import 'package:satyam_website/widgets/navigation_bar/navigation_bar_mobile.dart';

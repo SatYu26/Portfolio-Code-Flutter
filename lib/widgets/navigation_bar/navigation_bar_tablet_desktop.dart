@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:satyam_website/Colors/colors.dart';
 import 'package:satyam_website/widgets/navigation_bar/navbar_item.dart';
 import 'package:satyam_website/widgets/navigation_bar/navbar_logo.dart';
 

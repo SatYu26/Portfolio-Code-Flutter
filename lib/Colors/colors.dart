@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:velocity_x/velocity_x.dart';
 
 mixin Coolors {

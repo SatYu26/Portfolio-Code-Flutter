@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:satyam_website/Colors//colors.dart';
@@ -11,6 +10,7 @@ class NameWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final SNameWidget = "Satyam\nGoyal."
         .text
         .white
@@ -20,10 +20,11 @@ class NameWidget extends StatelessWidget {
         .bold
         .make()
         .shimmer();
+
     return Container(
       width: 600,
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
+        padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
