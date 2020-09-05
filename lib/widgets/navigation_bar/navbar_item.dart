@@ -8,6 +8,7 @@ class NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+//    Navigator.of(context).pushNamed('About');
     return Text(
       title,
       style: TextStyle(fontSize: 18, color: Coolors.navBarColor),
