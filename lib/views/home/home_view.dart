@@ -20,18 +20,18 @@ class HomeView extends StatelessWidget {
   }
 }
 
-class PictureWidget extends StatelessWidget {
-  const PictureWidget({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Image(
-      image: new AssetImage("assets/BG.jpeg"),
-      fit: BoxFit.cover,
-      color: Colors.black87.withOpacity(0.7),
-      colorBlendMode: BlendMode.darken,
-    );
-  }
-}
+//class PictureWidget extends StatelessWidget {
+//  const PictureWidget({
+//    Key key,
+//  }) : super(key: key);
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return Image(
+//      image: new AssetImage("assets/BG.jpeg"),
+//      fit: BoxFit.cover,
+//      color: Colors.black87.withOpacity(0.7),
+//      colorBlendMode: BlendMode.darken,
+//    );
+//  }
+//}

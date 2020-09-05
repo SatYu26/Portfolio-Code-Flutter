@@ -8,8 +8,10 @@ class NameWidget extends StatelessWidget {
   const NameWidget({Key key}) : super(key: key);
 
 
+
   @override
   Widget build(BuildContext context) {
+    double c_width = MediaQuery.of(context).size.width*0.5;
 
     final SNameWidget = "Satyam\nGoyal."
         .text
@@ -22,7 +24,7 @@ class NameWidget extends StatelessWidget {
         .shimmer();
 
     return Container(
-      width: 600,
+      width: c_width,
       child: Padding(
         padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
         child: Column(
