@@ -54,25 +54,39 @@ class Introduction extends StatelessWidget {
           SizedBox(
             height: 5,
           ),
-          VxBox()
-              .color(Coolors.accentColor)
-              .size(60, 10)
-              .make()
-              .px4()
-              .shimmer(primaryColor: Coolors.accentColor),
+          Row(
+            children: [
+              LimitedBox(
+                maxWidth: 80,
+                child: VxBox()
+                    .color(Coolors.accentColor)
+                    .size(60, 10)
+                    .make()
+                    .px4()
+                    .shimmer(primaryColor: Coolors.accentColor),
+              ),
+            ],
+          ),
           SizedBox(
             height: 20,
           ),
-          RaisedButton(
-            onPressed: () {
-              launch("https://mtechviral.com");
-            },
-            hoverColor: Vx.purple700,
-            shape: Vx.roundedSm,
-            color: Coolors.accentColor,
-            textColor: Coolors.primaryColor,
-            child: "Resume".text.make(),
-          ).h(50),
+          Row(
+            children: [
+              LimitedBox(
+                maxWidth: 150,
+                child: RaisedButton(
+                  onPressed: () {
+                    launch("https://mtechviral.com");
+                  },
+                  hoverColor: Vx.purple700,
+                  shape: Vx.roundedSm,
+                  color: Coolors.accentColor,
+                  textColor: Coolors.primaryColor,
+                  child: "Resume".text.make(),
+                ).h(50),
+              ),
+            ],
+          ),
 
         // crossAlignment: CrossAxisAlignment.center,
         ]

@@ -28,7 +28,7 @@ class LayoutTemplate extends StatelessWidget {
             PictureWidget(),
             CenteredView(
               child: Column(children: <Widget>[
-                CenteredView(child: NavigationBar()),
+                NavigationBar(),
                 Expanded(
                   child: Navigator(
                     key: locator<NavigationService>().navigatorKey,

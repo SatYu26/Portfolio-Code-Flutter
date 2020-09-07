@@ -43,12 +43,19 @@ class NameWidget extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            VxBox()
-                .color(Coolors.accentColor)
-                .size(60, 10)
-                .make()
-                .px4()
-                .shimmer(primaryColor: Coolors.accentColor),
+            Row(
+              children: [
+                LimitedBox(
+                  maxWidth: 80,
+                  child: VxBox()
+                      .color(Coolors.accentColor)
+                      .size(60, 10)
+                      .make()
+                      .px4()
+                      .shimmer(primaryColor: Coolors.accentColor),
+                ),
+              ],
+            ),
             SizedBox(
               height: 20,
             ),

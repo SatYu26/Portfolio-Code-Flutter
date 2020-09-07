@@ -14,7 +14,7 @@ class HomeContentMobile extends StatelessWidget {
         children: <Widget>[
           NameWidget(),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           IntroductionWidget(),
         ]
