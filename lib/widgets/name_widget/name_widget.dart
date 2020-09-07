@@ -12,6 +12,7 @@ class NameWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.5;
+    double c_height = MediaQuery.of(context).size.height*0.5;
 
     final SNameWidget = "Satyam\nGoyal."
         .text
@@ -24,15 +25,17 @@ class NameWidget extends StatelessWidget {
         .shimmer();
 
     return Container(
-      width: c_width,
+      width: 600,
+      height: c_height,
       child: Padding(
         padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
           children: <Widget>[
             if (context.isMobile) 50.heightBox else 10.heightBox,
-            CustomAppBar().shimmer(primaryColor: Coolors.accentColor),
+            Align(
+              alignment: Alignment.topLeft,
+                child: CustomAppBar().shimmer(primaryColor: Coolors.accentColor)
+            ),
             SizedBox(
               height: 20,
             ),

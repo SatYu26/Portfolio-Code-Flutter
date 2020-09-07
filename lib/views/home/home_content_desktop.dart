@@ -7,7 +7,10 @@ class HomeContentDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
+    return Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
       NameWidget(),
       Expanded(
         child: Center(
