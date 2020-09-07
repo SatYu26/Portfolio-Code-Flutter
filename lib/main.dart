@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:satyam_website/locator.dart';
-import 'views/home/home_view.dart';
 import 'package:satyam_website/Colors/colors.dart';
 import 'package:satyam_website/views/layout_template/layout_template.dart';
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:satyam_website/Colors/colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:satyam_website/extensions/hover_extensions.dart';
 
 
 class IntroductionTabletDesktop extends StatelessWidget {
@@ -84,11 +85,9 @@ class Introduction extends StatelessWidget {
                   textColor: Coolors.primaryColor,
                   child: "Resume".text.make(),
                 ).h(50),
-              ),
+              ).showCursorOnHover.moveUpOnHover,
             ],
-          ),
-
-        // crossAlignment: CrossAxisAlignment.center,
+          ), // crossAlignment: CrossAxisAlignment.center,
         ]
       );
   }

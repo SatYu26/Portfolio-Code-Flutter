@@ -12,7 +12,6 @@ class NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//    Navigator.of(context).pushNamed('About');
     return GestureDetector(
       onTap: () {
         locator<NavigationService>().navigateTo(navigationPath);

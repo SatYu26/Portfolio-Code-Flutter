@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:satyam_website/locator.dart';
-import 'package:satyam_website/nav_drawer/navigation_drawer.dart';
+import 'package:satyam_website/widgets/nav_drawer/navigation_drawer.dart';
 import 'package:satyam_website/routing/route_names.dart';
 import 'package:satyam_website/routing/router.dart';
 import 'package:satyam_website/services/navigation_service.dart';

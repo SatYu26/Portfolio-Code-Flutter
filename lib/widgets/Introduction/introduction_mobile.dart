@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:satyam_website/Colors/colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:satyam_website/extensions/hover_extensions.dart';
 
 
 class IntroductionMobile extends StatelessWidget {
@@ -85,9 +86,7 @@ class Introduction extends StatelessWidget {
                 ).h(50),
               ),
             ],
-          ),
-
-          // crossAlignment: CrossAxisAlignment.center,
+          ).showCursorOnHover.moveUpOnHover, // crossAlignment: CrossAxisAlignment.center,
         ]
     );
   }

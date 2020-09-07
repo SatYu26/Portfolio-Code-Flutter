@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:satyam_website/routing/route_names.dart';
 import 'package:satyam_website/widgets/navigation_bar/navbar_item.dart';
 import 'package:satyam_website/widgets/navigation_bar/navbar_logo.dart';
+import 'package:satyam_website/extensions/hover_extensions.dart';
 
 
 class NavigationBarTabletDesktop extends StatelessWidget {
@@ -18,19 +19,19 @@ class NavigationBarTabletDesktop extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                NavBarItem('Home', HomeRoute),
+                NavBarItem('Home', HomeRoute).showCursorOnHover.moveUpOnHover,
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('About', AboutRoute),
+                NavBarItem('About', AboutRoute).showCursorOnHover.moveUpOnHover,
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('Experience', ExperienceRoute),
+                NavBarItem('Experience', ExperienceRoute).showCursorOnHover.moveUpOnHover,
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('Projects', ProjectRoute),
+                NavBarItem('Projects', ProjectRoute).showCursorOnHover.moveUpOnHover,
               ],
             )
           ]
