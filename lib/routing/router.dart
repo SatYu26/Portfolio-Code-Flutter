@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:satyam_website/routing/route_names.dart';
 import 'package:satyam_website/views/about/about_view.dart';
 import 'package:satyam_website/views/home/home_view.dart';
-import 'package:satyam_website/views/Resume/resume_view.dart';
+import 'package:satyam_website/views/Experience/experience_view.dart';
+import 'package:satyam_website/views/Project/project_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   print('generateRoute: ${settings.name}');
@@ -11,8 +12,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(HomeView());
     case AboutRoute:
       return _getPageRoute(AboutView());
-    case ResumeRoute:
-      return _getPageRoute(ResumeView());
+    case ExperienceRoute:
+      return _getPageRoute(ExperienceView());
+    case ProjectRoute:
+      return _getPageRoute(ProjectView());
     default:
       return _getPageRoute(HomeView());
   }

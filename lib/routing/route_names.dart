@@ -1,3 +1,4 @@
 const String HomeRoute = 'Home';
 const String AboutRoute = 'About';
-const String ResumeRoute = 'Resume';
+const String ExperienceRoute = 'Experience';
+const String ProjectRoute = "Project";
