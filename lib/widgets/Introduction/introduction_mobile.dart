@@ -32,7 +32,7 @@ class Introduction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final introWidget ="Blah Blah Blah Blah Blah"
+    final introWidget ="Blah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah Blah"
         .text
         .white
         .xl2

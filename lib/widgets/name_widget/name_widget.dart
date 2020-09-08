@@ -90,6 +90,13 @@ class SocialAccounts extends StatelessWidget {
   Widget build(BuildContext context) {
     return [
       Icon(
+        AntDesign.mail,
+        color: Colors.white,
+      ).mdClick(() {
+        launch("mailto:goyalsatyam8@gmail.com");
+      }).make().showCursorOnHover.moveUpOnHover,
+      20.widthBox,
+      Icon(
         AntDesign.twitter,
         color: Colors.white,
       ).mdClick(() {
@@ -115,7 +122,7 @@ class SocialAccounts extends StatelessWidget {
         color: Colors.white,
       ).mdClick(() {
         launch("https://github.com/iampawan");
-      }).make().showCursorOnHover.moveUpOnHover
+      }).make().showCursorOnHover.moveUpOnHover,
     ].hStack();
   }
 }
