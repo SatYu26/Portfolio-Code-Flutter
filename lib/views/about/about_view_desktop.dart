@@ -9,7 +9,7 @@ class AboutContentDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AboutTitle = "About Me"
+    final AboutTitle = "--- About Me ---"
         .text
         .white
         .xl

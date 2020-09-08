@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:satyam_website/Colors/colors.dart';
-import 'package:satyam_website/views/about/MyPic_widget_mobile.dart';
-import 'package:satyam_website/views/about/about_view_intro.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class AboutContentMobile extends StatelessWidget {
-  const AboutContentMobile({Key key}) : super(key: key);
+class ExperienceViewMobile extends StatelessWidget {
+  const ExperienceViewMobile({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final AboutTitle = "About Me"
+    final ExperienceTitle = "--- Where I've Worked ---"
         .text
         .white
         .xl
@@ -23,24 +21,16 @@ class AboutContentMobile extends StatelessWidget {
       child: Container(
         color: Coolors.primaryColor,
         width: 600,
-        height: 800,
+        height: 600,
         child: ListView(
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.fromLTRB(0,10,0,10),
                 child: Align(
                   alignment: Alignment.topCenter,
-                    child: AboutTitle,
+                  child: ExperienceTitle,
                 ),
               ),
-              Align(
-                  alignment: Alignment.center,
-                  child: MyPicAboutMobile()
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              IntroductionAboutDesktop(),
             ]
         ),
       ),
