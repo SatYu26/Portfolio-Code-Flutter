@@ -10,7 +10,11 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: SingleChildScrollView(child: HomeContentMobile()),
+      mobile: ListView(
+        children: [
+          HomeContentMobile(),
+        ],
+      ),
       desktop: HomeContentDesktop(),
     );
   }

@@ -9,7 +9,7 @@ class AboutContentMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AboutTitle = "About Me"
+    final AboutTitle = "--- About Me ---"
         .text
         .white
         .xl
@@ -40,7 +40,10 @@ class AboutContentMobile extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              IntroductionAboutDesktop(),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(10,0,10,0),
+                child: IntroductionAboutDesktop(),
+              ),
             ]
         ),
       ),
