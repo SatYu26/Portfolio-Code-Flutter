@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:satyam_website/widgets/name_widget/name_widget.dart';
-import 'package:satyam_website/widgets/Introduction/introduction.dart';
+import 'package:satyam_website/views/home/name_widget/name_widget.dart';
+import 'package:satyam_website/views/home/Introduction/introduction.dart';
 
 class HomeContentMobile extends StatelessWidget {
   const HomeContentMobile({Key key}) : super(key: key);

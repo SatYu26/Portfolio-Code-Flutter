@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:satyam_website/widgets/custom_text/CustomText.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 
@@ -7,7 +8,7 @@ class IntroductionAboutMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.6;
-    double c_height = MediaQuery.of(context).size.height*1.5;
+    double c_height = MediaQuery.of(context).size.height*1.9;
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 0, 5, 0),
       width: c_width,
@@ -28,8 +29,31 @@ class Introduction extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
+  Widget technology(BuildContext context, String text) {
+    return Row(
+      children: [
+        Icon(
+          Icons.skip_next,
+          color: Color(0xff64FFDA).withOpacity(0.6),
+          size: 14.0,
+        ),
+        SizedBox(
+          width: MediaQuery.of(context).size.width * 0.01,
+        ),
+        Text(
+          text,
+          style: TextStyle(
+            color: Color(0xff717C99),
+            letterSpacing: 1.75,
+          ),
+        )
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     final AboutintroWidget ="I am a 3rd Year undergraduate from SRM Institute of Science and technology, Kattankulatur.\n"
         "20 years of living a comical life!\n"
         "Creatives and Photography Lead at Developer Student Clubs (DSC) SRM.\n"
@@ -50,7 +74,49 @@ class Introduction extends StatelessWidget {
         : context.percentWidth * 40);
     return ListView(
         children: <Widget>[
-          AboutintroWidget,// crossAlignment: CrossAxisAlignment.center,
+          AboutintroWidget,
+          CustomText(
+            text:
+            "Here are a few technologies I've been working with recently:\n\n",
+            textsize: 16.0,
+            color: Color(0xff828DAA),
+            fontWeight: FontWeight.w500,
+            letterSpacing: 0.75,
+          ),// crossAlignment: CrossAxisAlignment.center,
+          Container(
+            height: size.height*0.25,
+            width: size.width,
+            //   color: Colors.redAccent,
+            child: Row(
+              children: [
+                Container(
+                  width: size.width * 0.40,
+                  height: size.height*0.25,
+                  child: Column(
+                    children: [
+                      technology(context, "Dart"),
+                      technology(context, "Flutter"),
+                      technology(context, "Firebase"),
+                      technology(context, "UI/UX"),
+                      technology(context, "Tensorflow JS"),
+                    ],
+                  ),
+                ),
+                Container(
+                  width: size.width * 0.50,
+                  height: size.height*0.25,
+                  child: Column(
+                    children: [
+                      technology(context, "Python"),
+                      technology(context, "HTML & (S)CSS"),
+                      technology(context, "Open CV"),
+                      technology(context, "Machine Learning"),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
         ]
     );
   }

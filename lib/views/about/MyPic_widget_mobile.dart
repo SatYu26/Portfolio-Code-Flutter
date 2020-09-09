@@ -7,11 +7,11 @@ class MyPicAboutMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(100, 10, 0, 0),
+      padding: const EdgeInsets.fromLTRB(50, 10, 0, 0),
       child: Row(
         children: [
           //          if (context.isMobile) 50.heightBox else 10.heightBox,
-          SizedBox(height: 300, width: 200, child: MyPicWidget()),
+          SizedBox(height: 300, width: 300, child: MyPicWidget()),
         ],
       ),
     );
