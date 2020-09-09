@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:satyam_website/Colors/colors.dart';
+import 'package:satyam_website/widgets/custom_text/CustomText.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:satyam_website/extensions/hover_extensions.dart';
@@ -9,9 +10,10 @@ class IntroductionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double c_width = MediaQuery.of(context).size.width*0.7;
+    double c_width = MediaQuery.of(context).size.width*0.75;
+    double c_height = MediaQuery.of(context).size.height*1.1;
     return Container(
-      height: 200,
+      height: c_height,
       width: c_width,
       alignment: Alignment.center,
       child: Row(
@@ -32,11 +34,13 @@ class Introduction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final introWidget ="Blah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah BlahBlah Blah Blah Blah Blah"
+    final introWidget ="I am a 3rd Year undergraduate from SRM Institute of Science and technology, Kattankulatur.\n"
+        "I am Your friendly Neighbourhood Developer  and a Learning Enthusiast,  who is obsessed with the idea of improving himself and wants a platform to grow and excel.\n"
+        "I Love Android Development, xD."
         .text
         .white
         .xl2
-        .maxLines(5)
+        .maxLines(15)
         .make()
         .w(context.isMobile
         ? context.screenWidth
@@ -47,12 +51,16 @@ class Introduction extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
+          CustomText(
+            text:
+            "I build things for the Android and web.",
+            textsize: 30.0,
+            color: Color(0xffCCD6F6).withOpacity(0.6),
+            fontWeight: FontWeight.w700,
+          ),
           introWidget,
           SizedBox(
             height: 20,
-          ),
-          SizedBox(
-            height: 5,
           ),
           Row(
             children: [
@@ -76,7 +84,7 @@ class Introduction extends StatelessWidget {
                 maxWidth: 150,
                 child: RaisedButton(
                   onPressed: () {
-                    launch("https://mtechviral.com");
+                    launch("https://drive.google.com/file/d/1TTLiso8bk1a_rTjRo9NkVIy-YOq8LbIu/view?usp=sharing");
                   },
                   hoverColor: Vx.purple700,
                   shape: Vx.roundedSm,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:satyam_website/Colors/colors.dart';
 import 'package:satyam_website/views/about/MyPic_widget_desktop.dart';
-import 'package:satyam_website/views/about/about_view_intro.dart';
+import 'package:satyam_website/views/about/about_view_intro_desktop.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class AboutContentDesktop extends StatelessWidget {
@@ -21,7 +21,7 @@ class AboutContentDesktop extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20.0),
       child: Container(
-        color: Coolors.primaryColor,
+        color: Color(0xff0A192F),
         width: 600,
         height: 635,
         child: ListView(

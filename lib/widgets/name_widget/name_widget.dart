@@ -100,28 +100,28 @@ class SocialAccounts extends StatelessWidget {
         AntDesign.twitter,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://twitter.com/imthepk");
+        launch("https://twitter.com/SatYug26");
       }).make().showCursorOnHover.moveUpOnHover,
       20.widthBox,
       Icon(
         AntDesign.instagram,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://instagram.com/codepur_ka_superhero");
+        launch("https://www.instagram.com/satyu.26/");
       }).make().showCursorOnHover.moveUpOnHover,
       20.widthBox,
       Icon(
         AntDesign.linkedin_square,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://youtube.com/mtechviral");
+        launch("https://www.linkedin.com/in/satyam-goyal26/");
       }).make().showCursorOnHover.moveUpOnHover,
       20.widthBox,
       Icon(
         AntDesign.github,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://github.com/iampawan");
+        launch("https://github.com/SatYu26");
       }).make().showCursorOnHover.moveUpOnHover,
     ].hStack();
   }

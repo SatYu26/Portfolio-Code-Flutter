@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:satyam_website/Colors/colors.dart';
 import 'package:satyam_website/views/about/MyPic_widget_mobile.dart';
-import 'package:satyam_website/views/about/about_view_intro.dart';
+import 'package:satyam_website/views/about/about_view_intro_mobile.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class AboutContentMobile extends StatelessWidget {
@@ -21,7 +21,7 @@ class AboutContentMobile extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20.0),
       child: Container(
-        color: Coolors.primaryColor,
+        color: Color(0xff0A192F),
         width: 600,
         height: 800,
         child: ListView(
@@ -42,7 +42,7 @@ class AboutContentMobile extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(10,0,10,0),
-                child: IntroductionAboutDesktop(),
+                child: IntroductionAboutMobile(),
               ),
             ]
         ),

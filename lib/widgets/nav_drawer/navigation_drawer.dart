@@ -12,7 +12,7 @@ class NavigationDrawer extends StatelessWidget {
     return Container(
       width: 300,
       decoration: BoxDecoration(
-          color: Colors.white,
+          color: Color(0xff0A192F),
           boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 16)]),
       child: Column(
         children: <Widget>[
