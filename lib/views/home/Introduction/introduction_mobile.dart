@@ -46,6 +46,8 @@ class Introduction extends StatelessWidget {
         ? context.screenWidth
         : context.percentWidth * 40);
     return ListView(
+        physics: NeverScrollableScrollPhysics(),
+        addAutomaticKeepAlives: true,
         children: <Widget>[
           " - Introduction".text.gray500.widest.sm.make(),
           SizedBox(

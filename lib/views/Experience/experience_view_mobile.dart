@@ -28,9 +28,13 @@ class ExperienceViewMobile extends StatelessWidget {
         //color: Colors.tealAccent,
         color: Color(0xff0A192F),
         width: 600,
-        height: 600,
+        height: 800,
         child: ListView(
-          children: [
+//          shrinkWrap: true,
+//          physics: ClampingScrollPhysics(),
+          physics: NeverScrollableScrollPhysics(),
+          addAutomaticKeepAlives: true,
+          children: <Widget>[
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
               child: Align(
@@ -38,10 +42,9 @@ class ExperienceViewMobile extends StatelessWidget {
                 child: ExperienceTitle,
               ),
             ),
-            SizedBox(
-              height: size.height * 0.07,
-            ),
-            ExperiencePictureWidget(),
+            Align(
+              alignment: Alignment.center,
+                child: ExperiencePictureWidget()),
             Padding(
               padding: const EdgeInsets.only(bottom: 40),
               child: ExperiencesMobile(),
@@ -53,7 +56,6 @@ class ExperienceViewMobile extends StatelessWidget {
   }
 }
 
-
 class ExperiencePictureWidget extends StatelessWidget {
   const ExperiencePictureWidget({
     Key key,
@@ -61,20 +63,13 @@ class ExperiencePictureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.center,
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.2,
-          width: MediaQuery.of(context).size.width ,
-          child: Image(
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.2,
+      width: MediaQuery.of(context).size.width,
+      child: Image(
 //                      fit: BoxFit.cover,
-            image: AssetImage("assets/Programmer.png"),
-          ),
-        ),
+        image: AssetImage("assets/Programmer.png"),
       ),
     );
   }
 }
-

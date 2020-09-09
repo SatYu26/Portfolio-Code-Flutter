@@ -9,8 +9,8 @@ class ExperiencesMobile extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width - 350,
+      height: MediaQuery.of(context).size.height*0.6,
+      width: MediaQuery.of(context).size.width,
       alignment: Alignment.topCenter,
       child: Steps(
         direction: Axis.vertical,

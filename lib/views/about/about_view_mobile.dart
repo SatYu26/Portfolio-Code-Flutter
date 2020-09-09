@@ -23,8 +23,11 @@ class AboutContentMobile extends StatelessWidget {
       child: Container(
         color: Color(0xff0A192F),
         width: 600,
-        height: 800,
+        height: 1600,
         child: ListView(
+//          shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            addAutomaticKeepAlives: true,
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.fromLTRB(0,10,0,10),

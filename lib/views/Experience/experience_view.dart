@@ -8,11 +8,9 @@ class ExperienceView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: ScreenTypeLayout(
-        mobile: ExperienceViewMobile(),
-        desktop: ExperienceViewDesktop(),
-      ),
+    return ScreenTypeLayout(
+      mobile: ExperienceViewMobile(),
+      desktop: ExperienceViewDesktop(),
     );
   }
 }

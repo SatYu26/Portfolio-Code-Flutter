@@ -31,6 +31,8 @@ class NameWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
         child: ListView(
+          physics: NeverScrollableScrollPhysics(),
+            addAutomaticKeepAlives: true,
           children: <Widget>[
             if (context.isMobile) 50.heightBox else 10.heightBox,
             Align(
