@@ -11,10 +11,10 @@ class DrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 30, top: 60),
+      padding: const EdgeInsets.only(left: 25, top: 60),
       child: Row(
         children: <Widget>[
-          Icon(icon),
+          Icon(icon, color: Colors.white,),
           SizedBox(width: 30),
           NavBarItem(title,navigationPath),
         ],

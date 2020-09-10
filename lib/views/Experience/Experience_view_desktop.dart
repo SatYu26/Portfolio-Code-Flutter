@@ -24,9 +24,6 @@ class ExperienceViewDesktop extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20.0),
       child: Container(
-//      height: MediaQuery.of(context).size.height * 1.14,
-//      width: MediaQuery.of(context).size.width - 100,
-        //color: Colors.tealAccent,
         color: Color(0xff0A192F),
         width: 600,
         height: 635,
@@ -51,7 +48,7 @@ class ExperienceViewDesktop extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 50),
+                  padding: const EdgeInsets.only(bottom:15),
                   child: ExperiencesDesktop(),
                 ),
               ],

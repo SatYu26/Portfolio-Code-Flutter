@@ -24,26 +24,29 @@ class AboutContentDesktop extends StatelessWidget {
         color: Color(0xff0A192F),
         width: 600,
         height: 635,
-        child: ListView(
+        child: Stack(
+          fit: StackFit.expand,
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0,10,0,40),
-              child: Align(
-                  alignment: Alignment.center,
-                  child: AboutTitle,
-              ),
+            Align(
+              alignment: Alignment.centerRight,
+                child: MyPicAboutDesktop()),
+            ListView(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 40),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: AboutTitle,
+                  ),
+                ),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      IntroductionAboutDesktop(),
+                    ]),
+              ],
             ),
-            Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  MyPicAboutDesktop(),
-                  Expanded(
-                    child: Center(
-                      child: IntroductionAboutDesktop(),
-                    ),
-                  )
-                ]),
           ],
         ),
       ),
