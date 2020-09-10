@@ -53,11 +53,19 @@ class PictureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image(
-      image: new AssetImage("assets/BG.jpeg"),
-      fit: BoxFit.cover,
-      color: Colors.black87.withOpacity(0.7),
-      colorBlendMode: BlendMode.darken,
+    return ScreenTypeLayout(
+      mobile: Image(
+        image: new AssetImage("assets/BGM.jpeg"),
+        fit: BoxFit.cover,
+        color: Colors.black87.withOpacity(0.7),
+        colorBlendMode: BlendMode.darken,
+      ),
+        desktop: Image(
+          image: new AssetImage("assets/BG.jpeg"),
+          fit: BoxFit.cover,
+          color: Colors.black87.withOpacity(0.7),
+          colorBlendMode: BlendMode.darken,
+        ),
     );
   }
 }

@@ -66,6 +66,20 @@ flutter:
     - assets/BG.jpeg
     - assets/MyPic.jpeg
     - assets/Programmer.png
+    - assets/BGM.jpeg
+    - assets/wolverine.png
+    - assets/git.png
+    - assets/Friday.png
+    - assets/fashion.jpg
+    - assets/tfjs.png
+    - assets/hw.png
+    - assets/url.png
+    - assets/motion.png
+    - assets/expressions.png
+    - assets/faceRecog.jpg
+    - assets/face-track.jpg
+    - assets/InvisibilityCloak.jpg
+    - assets/wifi.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

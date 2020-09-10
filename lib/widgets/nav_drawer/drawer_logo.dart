@@ -6,6 +6,7 @@ class DrawerLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      height: 75,
       child: Image.asset('assets/logo.png'),
     );
   }

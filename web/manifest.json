@@ -10,13 +10,33 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "icons/android-icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-512.png",
+            "src": "icons/android-icon-144x144.png",
             "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/android-icon-96x96.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/android-icon-72x72.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/android-icon-48x48.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/android-icon-36x36.png",
+            "sizes": "192x192",
             "type": "image/png"
         }
     ]
