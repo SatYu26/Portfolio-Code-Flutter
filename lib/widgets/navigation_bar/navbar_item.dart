@@ -15,6 +15,7 @@ class NavBarItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         locator<NavigationService>().navigateTo(navigationPath);
+        Navigator.of(context).pop();
       },
       child: Text(
         title,

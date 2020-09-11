@@ -20,7 +20,9 @@ class NavigationBarMobile extends StatelessWidget {
             highlightColor: Colors.teal,
             color: Coolors.accentColor.withOpacity(0.6),
             iconSize: 35,
-            onPressed: () {Scaffold.of(context).openDrawer();},
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+              },
           ),
           NavBarLogo()
         ],
