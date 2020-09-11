@@ -54,18 +54,19 @@ class Projects extends StatelessWidget {
         SizedBox(
           height: size.height * 0.04,
         ),
+
         FeatureProject(
-          imagePath: "assets/wolverine.png",
+          imagePath: "assets/tfjs.png",
           ontab: () {
             method.launchURL(
-                "https://marketplace.visualstudio.com/items?itemName=Satyu.wolverine");
+                "https://github.com/SatYu26/Hand-Gesture-Classifier-With-Tensorflow.js");
           },
           projectDesc:
-          "This is a Dark theme type extension for VS Code with some tweaks which will remind you of the night Sky (Wolverine).",
-          projectTitle: "Wolverine",
-          tech1: "VS Code",
-          tech2: "Colour Theme",
-          tech3: "CSS",
+          "It is a browser based Rock, Paper and Scissor(Hand Gestures) classifier Created Using Tensorflow.js.",
+          projectTitle: "Hand Gesture Classifier",
+          tech1: "JavaScript",
+          tech2: "Tensorflow",
+          tech3: "Web",
         ),
 
         FeatureProjectInverted(
@@ -83,34 +84,20 @@ class Projects extends StatelessWidget {
         ),
 
         FeatureProject(
-          imagePath: "assets/Friday.png",
+          imagePath: "assets/wolverine.png",
           ontab: () {
             method.launchURL(
-                "https://github.com/SatYu26/Friday");
+                "https://marketplace.visualstudio.com/items?itemName=Satyu.wolverine");
           },
           projectDesc:
-          "An AI personal assistant is a piece of software that understands verbal or written commands and completes task assigned by the client. It is an example of weak AI that is it can only execute and perform quest designed by the user.",
-          projectTitle: "Friday",
-          tech1: "Python",
-          tech2: "Open CV",
-          tech3: "Voice Assistant",
+          "This is a Dark theme type extension for VS Code with some tweaks which will remind you of the night Sky (Wolverine).",
+          projectTitle: "Wolverine",
+          tech1: "VS Code",
+          tech2: "Colour Theme",
+          tech3: "CSS",
         ),
 
         FeatureProjectInverted(
-          imagePath: "assets/tfjs.png",
-          ontab: () {
-            method.launchURL(
-                "https://github.com/SatYu26/Hand-Gesture-Classifier-With-Tensorflow.js");
-          },
-          projectDesc:
-          "It is a browser based Rock, Paper and Scissor(Hand Gestures) classifier Created Using Tensorflow.js.",
-          projectTitle: "Hand Gesture Classifier",
-          tech1: "JavaScript",
-          tech2: "Tensorflow",
-          tech3: "Web",
-        ),
-
-        FeatureProject(
           imagePath: "assets/fashion.jpg",
           ontab: () {
             method.launchURL(
@@ -124,22 +111,8 @@ class Projects extends StatelessWidget {
           tech3: "Web",
         ),
 
-        FeatureProjectInverted(
-          imagePath: "assets/hw.png",
-          ontab: () {
-            method.launchURL(
-                "https://github.com/SatYu26/Handwriting-Classifier-With-Tensorflow.js");
-          },
-          projectDesc:
-          "It is a browser based Handwriting classifier Created Using Tensorflow.js.",
-          projectTitle: "Handwriting Classifier",
-          tech1: "JavaScript",
-          tech2: "Tensorflow",
-          tech3: "Web",
-        ),
-
         FeatureProject(
-          imagePath: "assets/url.png",
+          imagePath: "assets/url.jpg",
           ontab: () {
             method.launchURL(
                 "https://github.com/SatYu26/URL-Shortener");
@@ -150,62 +123,6 @@ class Projects extends StatelessWidget {
           tech1: "Flask",
           tech2: "Python",
           tech3: "Web",
-        ),
-
-        FeatureProjectInverted(
-          imagePath: "assets/face-track.jpg",
-          ontab: () {
-            method.launchURL(
-                "https://github.com/SatYu26/Face-Track");
-          },
-          projectDesc:
-          "Controlling Keyboard using facial expressions.",
-          projectTitle: "Face Track",
-          tech1: "Open CV",
-          tech2: "Python",
-          tech3: "ML",
-        ),
-
-        FeatureProject(
-          imagePath: "assets/faceRecog.jpg",
-          ontab: () {
-            method.launchURL(
-                "https://github.com/SatYu26/Face-Recognition-Model-Version2");
-          },
-          projectDesc:
-          "It is a Face Recognition Model which can Recognize the User.",
-          projectTitle: "Face Recognition Model",
-          tech1: "Open CV",
-          tech2: "Python",
-          tech3: "ML",
-        ),
-
-        FeatureProjectInverted(
-          imagePath: "assets/expressions.png",
-          ontab: () {
-            method.launchURL(
-                "https://github.com/SatYu26/Expression-Tracker");
-          },
-          projectDesc:
-          "Checking facial expressions using Open CV.",
-          projectTitle: "Expression Tracker",
-          tech1: "Open CV",
-          tech2: "Python",
-          tech3: "ML",
-        ),
-
-        FeatureProject(
-          imagePath: "assets/motion.png",
-          ontab: () {
-            method.launchURL(
-                "https://github.com/SatYu26/Motion-Detector");
-          },
-          projectDesc:
-          "Python/OpenCV script that detect motion on webcam and allow record it to a file and plot a graph for proper Visualization.",
-          projectTitle: "Motion Detector",
-          tech1: "Open CV",
-          tech2: "Python",
-          tech3: "ML",
         ),
 
         FeatureProjectInverted(
@@ -223,6 +140,90 @@ class Projects extends StatelessWidget {
         ),
 
         FeatureProject(
+          imagePath: "assets/expressions.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Expression-Tracker");
+          },
+          projectDesc:
+          "Checking facial expressions using Open CV.",
+          projectTitle: "Expression Tracker",
+          tech1: "Open CV",
+          tech2: "Python",
+          tech3: "ML",
+        ),
+
+        FeatureProjectInverted(
+          imagePath: "assets/hw.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Handwriting-Classifier-With-Tensorflow.js");
+          },
+          projectDesc:
+          "It is a browser based Handwriting classifier Created Using Tensorflow.js.",
+          projectTitle: "Handwriting Classifier",
+          tech1: "JavaScript",
+          tech2: "Tensorflow",
+          tech3: "Web",
+        ),
+
+        FeatureProject(
+          imagePath: "assets/motion.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Motion-Detector");
+          },
+          projectDesc:
+          "Python/OpenCV script that detect motion on webcam and allow record it to a file and plot a graph for proper Visualization.",
+          projectTitle: "Motion Detector",
+          tech1: "Open CV",
+          tech2: "Python",
+          tech3: "ML",
+        ),
+
+        FeatureProjectInverted(
+          imagePath: "assets/Friday.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Friday");
+          },
+          projectDesc:
+          "An AI personal assistant is a piece of software that understands verbal or written commands and completes task assigned by the client. It is an example of weak AI that is it can only execute and perform quest designed by the user.",
+          projectTitle: "Friday",
+          tech1: "Python",
+          tech2: "Open CV",
+          tech3: "Voice Assistant",
+        ),
+
+        FeatureProject(
+          imagePath: "assets/face-track.jpg",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Face-Track");
+          },
+          projectDesc:
+          "Controlling Keyboard using facial expressions.",
+          projectTitle: "Face Track",
+          tech1: "Open CV",
+          tech2: "Python",
+          tech3: "ML",
+        ),
+
+        FeatureProjectInverted(
+          imagePath: "assets/faceRecog.jpg",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Face-Recognition-Model-Version2");
+          },
+          projectDesc:
+          "It is a Face Recognition Model which can Recognize the User.",
+          projectTitle: "Face Recognition Model",
+          tech1: "Open CV",
+          tech2: "Python",
+          tech3: "ML",
+        ),
+
+        FeatureProject(
           imagePath: "assets/InvisibilityCloak.jpg",
           ontab: () {
             method.launchURL(
@@ -230,7 +231,7 @@ class Projects extends StatelessWidget {
           },
           projectDesc:
           "The algorithm is very similar in principle to green screening. But unlike green screening where we remove the background, in this application, we remove the foreground! This [code] turns a red colour cloth into an invisibility cloak.",
-          projectTitle: "Motion Detector",
+          projectTitle: "Invisibility Cloak",
           tech1: "Open CV",
           tech2: "Python",
           tech3: "Image Processing",

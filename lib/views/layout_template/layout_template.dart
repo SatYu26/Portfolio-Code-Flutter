@@ -26,6 +26,10 @@ class LayoutTemplate extends StatelessWidget {
           fit: StackFit.expand,
           children: <Widget>[
             PictureWidget(),
+            Align(
+                alignment: Alignment.bottomCenter,
+                child: Footer()
+            ),
             CenteredView(
               child: Column(children: <Widget>[
                 NavigationBar(),
@@ -66,6 +70,46 @@ class PictureWidget extends StatelessWidget {
           color: Colors.black87.withOpacity(0.7),
           colorBlendMode: BlendMode.darken,
         ),
+    );
+  }
+}
+
+class Footer extends StatelessWidget {
+  const Footer({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ScreenTypeLayout(
+      desktop: Container(
+        alignment: Alignment.center,
+        height: MediaQuery.of(context).size.height / 6,
+        width: MediaQuery.of(context).size.width - 100,
+        //color: Colors.white,
+        child: Text(
+          "Designed & Built by Satyam Goyal 💙 Flutter",
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.4),
+            letterSpacing: 1.75,
+            fontSize: 14.0,
+          ),
+        ),
+      ),
+      mobile: Container(
+        alignment: Alignment.center,
+        height: MediaQuery.of(context).size.height / 6,
+        width: MediaQuery.of(context).size.width - 100,
+        //color: Colors.white,
+        child: Text(
+          "",
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.4),
+            letterSpacing: 1.75,
+            fontSize: 14.0,
+          ),
+        ),
+      ),
     );
   }
 }
