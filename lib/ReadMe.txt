@@ -19,3 +19,5 @@ To make changes in Home View edit:
 name_widget
 introduction_mobile
 introduction_tablet_desktop
+
+Enjoy
