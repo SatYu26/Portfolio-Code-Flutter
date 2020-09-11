@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:satyam_website/widgets/nav_drawer/navbar_item_mobile.dart';
 import 'package:satyam_website/widgets/navigation_bar/navbar_item.dart';
 
 
@@ -16,7 +17,7 @@ class DrawerItem extends StatelessWidget {
         children: <Widget>[
           Icon(icon, color: Colors.white,),
           SizedBox(width: 30),
-          NavBarItem(title,navigationPath),
+          NavBarItemMobile(title,navigationPath),
         ],
       ),
     );

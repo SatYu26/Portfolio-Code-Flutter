@@ -4,10 +4,10 @@ import 'package:satyam_website/locator.dart';
 import 'package:satyam_website/services/navigation_service.dart';
 
 
-class NavBarItem extends StatelessWidget {
+class NavBarItemMobile extends StatelessWidget {
   final String title;
   final String navigationPath;
-  const NavBarItem(this.title, this.navigationPath);
+  const NavBarItemMobile(this.title, this.navigationPath);
 
 
   @override
@@ -15,7 +15,7 @@ class NavBarItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         locator<NavigationService>().navigateTo(navigationPath);
-//        Navigator.of(context).pop();
+        Navigator.of(context).pop();
       },
       child: Text(
         title,
