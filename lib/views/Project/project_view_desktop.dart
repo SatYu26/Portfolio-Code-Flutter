@@ -24,7 +24,7 @@ class ProjectViewDesktop extends StatelessWidget {
       child: Container(
         color: Color(0xff0A192F),
         width: 600,
-        height: 635,
+        height: 600,
         child: ListView(
           children: [
             Padding(
