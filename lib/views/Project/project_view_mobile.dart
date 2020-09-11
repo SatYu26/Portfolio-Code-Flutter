@@ -22,7 +22,7 @@ class ProjectViewMobile extends StatelessWidget {
       child: Container(
         color: Color(0xff0A192F),
         width: 600,
-        height: 4250,
+        height: 4450,
         child: ListView(
 //          shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
