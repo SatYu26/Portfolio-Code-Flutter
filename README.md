@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/SatYu26/Portfolio-Code-Flutter/blob/master/assets/logo1.png" height="56" />
+  <img alt="Logo" src="https://github.com/SatYu26/Portfolio-Code-Flutter/blob/master/assets/icon_dark.png" height="56" />
 </div>
 
 <br>
