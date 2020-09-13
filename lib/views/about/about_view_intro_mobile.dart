@@ -8,7 +8,7 @@ class IntroductionAboutMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.6;
-    double c_height = MediaQuery.of(context).size.height*1.9;
+    double c_height = MediaQuery.of(context).size.height*2.3;
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 0, 5, 0),
       width: c_width,
@@ -40,11 +40,13 @@ class Introduction extends StatelessWidget {
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.01,
         ),
-        Text(
-          text,
-          style: TextStyle(
-            color: Color(0xff717C99),
-            letterSpacing: 1.75,
+        Flexible(
+          child: Text(
+            text,
+            style: TextStyle(
+              color: Color(0xff717C99),
+              letterSpacing: 1.75,
+            ),
           ),
         )
       ],
@@ -86,7 +88,7 @@ class Introduction extends StatelessWidget {
             letterSpacing: 0.75,
           ),// crossAlignment: CrossAxisAlignment.center,
           Container(
-            height: size.height*0.25,
+            height: size.height*0.2,
             width: size.width,
             //   color: Colors.redAccent,
             child: Row(
@@ -105,7 +107,7 @@ class Introduction extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: size.width * 0.50,
+                  width: size.width * 0.40,
                   height: size.height*0.25,
                   child: Column(
                     children: [
