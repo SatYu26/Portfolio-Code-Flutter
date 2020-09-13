@@ -118,7 +118,7 @@ class Projects extends StatelessWidget {
                 "https://github.com/SatYu26/URL-Shortener");
           },
           projectDesc:
-          "This Is an Online URL SHORETNER webite created entirely on FLASK Framework.",
+          "This Is an Online URL SHORTENER webite created entirely on FLASK Framework.",
           projectTitle: "URL Shortener",
           tech1: "Flask",
           tech2: "Python",

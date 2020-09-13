@@ -88,7 +88,7 @@ class FeatureProject extends StatelessWidget {
                   right: 150.0,
                   child: Container(
                     height: size.height * 0.10,
-                    width: size.width * 0.25,
+                    width: size.width * 0.24,
                     //color: Colors.indigo,
                     child: Wrap(
                       // mainAxisAlignment: MainAxisAlignment.end,
