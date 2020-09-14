@@ -13,7 +13,7 @@ class NameWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.5;
-    double c_height = MediaQuery.of(context).size.height*0.65;
+    double c_height = MediaQuery.of(context).size.height*0.55;
 
     final SNameWidget = "Satyam\nGoyal."
         .text
