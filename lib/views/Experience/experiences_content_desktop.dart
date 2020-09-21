@@ -26,7 +26,7 @@ class ExperiencesDesktop extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  "SRM Institute of Science and Technology, Kattankulathur",
+                  "SRM Institute of Science and Technology, Kattankulathur (INDIA)",
                   style: TextStyle(
                     fontSize: 22.0,
                     color: Colors.white,

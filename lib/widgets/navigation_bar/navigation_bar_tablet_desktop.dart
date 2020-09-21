@@ -19,19 +19,19 @@ class NavigationBarTabletDesktop extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                NavBarItem('Home', HomeRoute).showCursorOnHover.moveUpOnHover,
+                NavBarItem('Home', HomeRoute).moveUpOnHover,
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('About', AboutRoute).showCursorOnHover.moveUpOnHover,
+                NavBarItem('About', AboutRoute).moveUpOnHover,
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('Experience', ExperienceRoute).showCursorOnHover.moveUpOnHover,
+                NavBarItem('Experience', ExperienceRoute).moveUpOnHover,
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('Projects', ProjectRoute).showCursorOnHover.moveUpOnHover,
+                NavBarItem('Projects', ProjectRoute).moveUpOnHover,
               ],
             )
           ]

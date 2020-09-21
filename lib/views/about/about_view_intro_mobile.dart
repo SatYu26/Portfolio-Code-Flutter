@@ -56,7 +56,7 @@ class Introduction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    final AboutintroWidget ="I am a 3rd Year undergraduate from SRM Institute of Science and technology, Kattankulatur.\n"
+    final AboutintroWidget ="I am a 3rd Year undergraduate from SRM Institute of Science and technology, Kattankulatur (INDIA).\n"
         "20 years of living a comical life!\n"
         "Creatives and Photography Lead at Developer Student Clubs (DSC) SRM.\n"
         "I am Your friendly Neighbourhood Developer  and a Learning Enthusiast,  who is obsessed with the idea of improving himself and wants a platform to grow and excel.\n"
