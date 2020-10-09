@@ -43,15 +43,24 @@
 
   gtag('config', 'UA-177827766-1');
   </script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body id="app-container">
 
-<div class="pacman">
-  <div></div>
-  <div></div>
-  <div></div>
+
+<div class="parent">
+  <div class="loader">
+    <div class="loader-items">
+      <div class="pac-man"></div>
+      <div class="circle" style="--i:0"></div>
+      <div class="circle" style="--i:1"></div>
+      <div class="circle" style="--i:2"></div>
+    </div>
+    <div class="loader-title">
+      <span>Loading...</span>
+    </div>
+  </div>
 </div>
 
   <!-- This script installs service_worker.js to provide PWA functionality to

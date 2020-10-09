@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #202C39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent .loader {
+  width: 100px;
+}
+
+.parent .loader .loader-title {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+
+.parent .loader .loader-items {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.parent .loader .loader-items .pac-man {
+  position: absolute;
+  border: 20px solid #F2D648;
+  border-radius: 50%;
+  border-right-color: transparent;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.parent .loader .loader-items .pac-man::before {
+  content: "";
+  border: 20px solid transparent;
+  border-right-color: #F2D648;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-animation: loader-pac-man-before 400ms linear infinite;
+          animation: loader-pac-man-before 400ms linear infinite;
+}
+
+.parent .loader .loader-items .pac-man::after {
+  content: "";
+  border: 20px solid transparent;
+  border-right-color: #F2D648;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-animation: loader-pac-man-after 400ms linear infinite;
+          animation: loader-pac-man-after 400ms linear infinite;
+}
+
+.parent .loader .loader-items .circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #F2D648;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation: loader-pac-man-point 600ms linear infinite;
+          animation: loader-pac-man-point 600ms linear infinite;
+  -webkit-animation-delay: calc(var(--i) * 200ms);
+          animation-delay: calc(var(--i) * 200ms);
+}
+
+@-webkit-keyframes loader-pac-man-before {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
+
+@keyframes loader-pac-man-before {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
+
+@-webkit-keyframes loader-pac-man-after {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+@keyframes loader-pac-man-after {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes loader-pac-man-point {
+  from {
+    left: 90px;
+  }
+  to {
+    left: 10px;
+  }
+}
+
+@keyframes loader-pac-man-point {
+  from {
+    left: 90px;
+  }
+  to {
+    left: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
