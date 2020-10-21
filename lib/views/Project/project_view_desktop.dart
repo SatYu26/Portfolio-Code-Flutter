@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:satyam_website/views/Project/FeatureProjectInvertedWidget.dart';
 import 'package:satyam_website/views/Project/FeatureProjectWidget.dart';
-import 'package:satyam_website/widgets/custom_text/CustomText.dart';
 import 'package:satyam_website/widgets/method/method.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -66,6 +65,34 @@ class Projects extends StatelessWidget {
           projectTitle: "Hand Gesture Classifier",
           tech1: "JavaScript",
           tech2: "Tensorflow",
+          tech3: "Web",
+        ),
+
+        FeatureProjectInverted(
+          imagePath: "assets/mask.jpeg",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Mask-Detection-and-Recognition-using-Deep-Learning-Keras");
+          },
+          projectDesc:
+          "This face mask detector is accurate, and since we used the MobileNetV2 architecture, it’s also computationally efficient, making it easier to deploy the model to embedded systems",
+          projectTitle: "Mask Detection and Recognition",
+          tech1: "Tensorflow",
+          tech2: "Python",
+          tech3: "Deep Learning",
+        ),
+
+        FeatureProject(
+          imagePath: "assets/Portfolio.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Portfolio-Code-Flutter");
+          },
+          projectDesc:
+          "My Portfolio Website which i have created using Flutter Web.",
+          projectTitle: "Portfolio Website",
+          tech1: "Flutter",
+          tech2: "Dart",
           tech3: "Web",
         ),
 
@@ -182,6 +209,34 @@ class Projects extends StatelessWidget {
         ),
 
         FeatureProjectInverted(
+          imagePath: "assets/tube.jpeg",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/YouTube-Video-Downloader");
+          },
+          projectDesc:
+          "Python Script for creating a YouTube video downloader.",
+          projectTitle: "YouTube Video Downloader",
+          tech1: "Python",
+          tech2: "TKinter",
+          tech3: "YouTube",
+        ),
+
+        FeatureProject(
+          imagePath: "assets/Sudoku.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Sudoku-Solver");
+          },
+          projectDesc:
+          "This Python Script can solve Sudoku simply by providing the Unsolved sudoku in the script itself or can also solve in Android using ADB.",
+          projectTitle: "Sudoku Solver",
+          tech1: "ADB",
+          tech2: "Python",
+          tech3: "Algorithm",
+        ),
+
+        FeatureProjectInverted(
           imagePath: "assets/Friday.png",
           ontab: () {
             method.launchURL(
@@ -235,6 +290,20 @@ class Projects extends StatelessWidget {
           tech1: "Open CV",
           tech2: "Python",
           tech3: "Image Processing",
+        ),
+
+        FeatureProjectInverted(
+          imagePath: "assets/snake.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/PyGame-Snake");
+          },
+          projectDesc:
+          "It is a Snake game which most of us may have played on our old Nokia device. This simple game is made using a python library i.e. PyGame.",
+          projectTitle: "PyGame Snake",
+          tech1: "TKinter",
+          tech2: "Python",
+          tech3: "PyGame",
         ),
       ],
     );

@@ -22,7 +22,7 @@ class ProjectViewMobile extends StatelessWidget {
       child: Container(
         color: Color(0xff0A192F),
         width: 600,
-        height: 4850,
+        height: 6850,
         child: ListView(
 //          shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
@@ -63,6 +63,32 @@ class Projects extends StatelessWidget {
             },
             image: "assets/git.png",
             projectname: 'GitHub Contribution Hack',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/Mask-Detection-and-Recognition-using-Deep-Learning-Keras");
+            },
+            image: "assets/mask.jpeg",
+            projectname: 'Mask Detection and Recognition',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/Portfolio-Code-Flutter");
+            },
+            image: "assets/Portfolio.png",
+            projectname: 'Portfolio Website',
           ),
 
           SizedBox(
@@ -176,6 +202,32 @@ class Projects extends StatelessWidget {
           MobileProject(
             ontab: () {
               method.launchURL(
+                  "https://github.com/SatYu26/YouTube-Video-Downloader");
+            },
+            image: "assets/tube.jpeg",
+            projectname: 'YouTube Video Downloader',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/Sudoku-Solver");
+            },
+            image: "assets/Sudoku.png",
+            projectname: 'Sudoku Solver',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
                   "https://github.com/SatYu26/Friday");
             },
             image: "assets/Friday.png",
@@ -219,6 +271,19 @@ class Projects extends StatelessWidget {
             },
             image: "assets/InvisibilityCloak.jpg",
             projectname: 'Invisibility Cloak',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/PyGame-Snake");
+            },
+            image: "assets/snake.png",
+            projectname: 'PyGame Snake',
           ),
         ]
     );

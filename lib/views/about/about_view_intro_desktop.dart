@@ -82,14 +82,14 @@ class Introduction extends StatelessWidget {
         letterSpacing: 0.75,
       ), // crossAlignment: CrossAxisAlignment.center,
       Container(
-        height: size.height * 0.15,
+        height: size.height * 0.30,
         width: size.width,
         //   color: Colors.redAccent,
         child: Row(
           children: [
             Container(
               width: size.width * 0.20,
-              height: size.height * 0.15,
+              height: size.height * 0.25,
               child: Column(
                 children: [
                   technology(context, "Dart"),
@@ -102,7 +102,7 @@ class Introduction extends StatelessWidget {
             ),
             Container(
               width: size.width * 0.15,
-              height: size.height * 0.15,
+              height: size.height * 0.25,
               child: Column(
                 children: [
                   technology(context, "Python"),

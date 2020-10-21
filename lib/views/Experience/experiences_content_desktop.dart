@@ -58,6 +58,87 @@ class ExperiencesDesktop extends StatelessWidget {
           {
             'color': Color(0xff64FFDA),
             'background': Colors.indigo,
+            'label': "📱",
+            'content': Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Robic Rufarm",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                SizedBox(
+                  height: 6.0,
+                ),
+                Text(
+                  "As Application Developer my key responsibilities include:-\n"
+                      "- Development of product and customization implementation with Data analytics platform.\n"
+                      "- Supporting the pre-sales process in areas such as demonstrations & research and post-sales,\nas part of a Support Helpdesk Offering whilst being involved with a variety of client projects and Market Research.\n"
+                      "- Working on the internal development projects.\n"
+                      "-Design and develop a web application and an Android application from scratch.\n"
+                      "The purpose of these applications is to monitor and interact with the Aerator system in the aquaculture farms.\n",
+                  style: TextStyle(
+                    fontSize: 13.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Text(
+                  "April - 2020 - May - 2020 ",
+                  style: TextStyle(
+                    fontSize: 12.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          },
+          {
+            'color': Color(0xff64FFDA),
+            'background': Colors.indigo,
+            'label': '👷🏻‍♀️',
+            'content': Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "UltraTech Cement - Aditya Birla Group",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                SizedBox(
+                  height: 6.0,
+                ),
+                Text(
+                  "I worked as Summer Intern for Industrial Training In Electrical and Electronics Department \nand Gained real life experience and knowledge related to Electrical and Electronics.\n",
+                  style: TextStyle(
+                    fontSize: 13.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Text(
+                  "May - 2019 - July - 2019 ",
+                  style: TextStyle(
+                    fontSize: 12.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          },
+          {
+            'color': Color(0xff64FFDA),
+            'background': Colors.indigo,
             'label': '🎥',
             'content': Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,7 +183,7 @@ class ExperiencesDesktop extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  "Microsoft Learn Student Ambassador (BETA)",
+                  "Microsoft Learn Student Ambassador (β)",
                   style: TextStyle(
                     fontSize: 22.0,
                     color: Colors.white,
@@ -123,87 +204,6 @@ class ExperiencesDesktop extends StatelessWidget {
                 ),
                 Text(
                   "January 2020 - Present ",
-                  style: TextStyle(
-                    fontSize: 12.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
-            ),
-          },
-          {
-            'color': Color(0xff64FFDA),
-            'background': Colors.indigo,
-            'label': "📱",
-            'content': Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "Robic Rufarm",
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                SizedBox(
-                  height: 6.0,
-                ),
-                Text(
-                  "As Application Developer my key responsibilities include:-\n"
-                  "- Development of product and customization implementation with Data analytics platform.\n"
-                  "- Supporting the pre-sales process in areas such as demonstrations & research and post-sales,\nas part of a Support Helpdesk Offering whilst being involved with a variety of client projects and Market Research.\n"
-                  "- Working on the internal development projects.\n"
-                  "-Design and develop a web application and an Android application from scratch.\n"
-                  "The purpose of these applications is to monitor and interact with the Aerator system in the aquaculture farms.\n",
-                  style: TextStyle(
-                    fontSize: 13.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                Text(
-                  "April - 2020 - May - 2020 ",
-                  style: TextStyle(
-                    fontSize: 12.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
-            ),
-          },
-          {
-            'color': Color(0xff64FFDA),
-            'background': Colors.indigo,
-            'label': '👷🏻‍♀️',
-            'content': Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "UltraTech Cement - Aditya Birla Group",
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                SizedBox(
-                  height: 6.0,
-                ),
-                Text(
-                  "I worked as Summer Intern for Industrial Training In Electrical and Electronics Department.\n",
-                  style: TextStyle(
-                    fontSize: 13.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                Text(
-                  "May - 2019 - July - 2019 ",
                   style: TextStyle(
                     fontSize: 12.0,
                     color: Color(0xffCCD6F6).withOpacity(0.5),

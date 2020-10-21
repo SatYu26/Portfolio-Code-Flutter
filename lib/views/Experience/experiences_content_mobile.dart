@@ -58,83 +58,6 @@ class ExperiencesMobile extends StatelessWidget {
           {
             'color': Color(0xff64FFDA),
             'background': Colors.indigo,
-            'label': '🎥',
-            'content': Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "Developer Student Clubs (DSC) SRM",
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                SizedBox(
-                  height: 6.0,
-                ),
-                Text(
-                  "I am Currently Lead of Creatives and Photography Domain in DSC Campus Club at SRM.\n",
-                  style: TextStyle(
-                    fontSize: 13.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                Text(
-                  "August - 2019 - Present ",
-                  style: TextStyle(
-                    fontSize: 12.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
-            ),
-          },
-          {
-            'color': Color(0xff64FFDA),
-            'background': Colors.indigo,
-            'label': '🌟',
-            'content': Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "Microsoft Learn Student Ambassador (BETA)",
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                SizedBox(
-                  height: 6.0,
-                ),
-                Text(
-                  "Hosted a 2 hours Hands On Workshop on Understanding Open CV and Gestures Control Car Racing Game.\nGained leadership experience, access to resources such as Microsoft Learn and Azure credits,\nand a diverse Microsoft network to develop their technical career.\n"
-                      "Finished learning paths based on AI and many more and gained knowledge and skills.\nOn-campus student leader with a passion for sharing technology with classmates and\nintroduce them to valuable student benefits like Microsoft Azure.\n",
-                  style: TextStyle(
-                    fontSize: 13.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                Text(
-                  "January 2020 - Present ",
-                  style: TextStyle(
-                    fontSize: 12.0,
-                    color: Color(0xffCCD6F6).withOpacity(0.5),
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
-            ),
-          },
-          {
-            'color': Color(0xff64FFDA),
-            'background': Colors.indigo,
             'label': "📱",
             'content': Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -195,7 +118,7 @@ class ExperiencesMobile extends StatelessWidget {
                   height: 6.0,
                 ),
                 Text(
-                  "I worked as Summer Intern for Industrial Training In Electrical and Electronics Department.\n",
+                  "I worked as Summer Intern for Industrial Training In Electrical and Electronics Department\nand Gained real life experience and knowledge related to Electrical and Electronics.\n",
                   style: TextStyle(
                     fontSize: 13.0,
                     color: Color(0xffCCD6F6).withOpacity(0.5),
@@ -204,6 +127,83 @@ class ExperiencesMobile extends StatelessWidget {
                 ),
                 Text(
                   "May - 2019 - July - 2019 ",
+                  style: TextStyle(
+                    fontSize: 12.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          },
+          {
+            'color': Color(0xff64FFDA),
+            'background': Colors.indigo,
+            'label': '🎥',
+            'content': Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Developer Student Clubs (DSC) SRM",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                SizedBox(
+                  height: 6.0,
+                ),
+                Text(
+                  "I am Currently Lead of Creatives and Photography Domain in DSC Campus Club at SRM.\n",
+                  style: TextStyle(
+                    fontSize: 13.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Text(
+                  "August - 2019 - Present ",
+                  style: TextStyle(
+                    fontSize: 12.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          },
+          {
+            'color': Color(0xff64FFDA),
+            'background': Colors.indigo,
+            'label': '🌟',
+            'content': Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Microsoft Learn Student Ambassador (β)",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                SizedBox(
+                  height: 6.0,
+                ),
+                Text(
+                  "Hosted a 2 hours Hands On Workshop on Understanding Open CV and Gestures Control Car Racing Game.\nGained leadership experience, access to resources such as Microsoft Learn and Azure credits,\nand a diverse Microsoft network to develop their technical career.\n"
+                      "Finished learning paths based on AI and many more and gained knowledge and skills.\nOn-campus student leader with a passion for sharing technology with classmates and\nintroduce them to valuable student benefits like Microsoft Azure.\n",
+                  style: TextStyle(
+                    fontSize: 13.0,
+                    color: Color(0xffCCD6F6).withOpacity(0.5),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Text(
+                  "January 2020 - Present ",
                   style: TextStyle(
                     fontSize: 12.0,
                     color: Color(0xffCCD6F6).withOpacity(0.5),

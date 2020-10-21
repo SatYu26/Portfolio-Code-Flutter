@@ -9,7 +9,7 @@ class IntroductionTabletDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width * 0.5;
-    double c_height = MediaQuery.of(context).size.height * 0.6;
+    double c_height = MediaQuery.of(context).size.height * 0.65;
     return Container(
       padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
       width: c_width,
@@ -91,7 +91,7 @@ class Introduction extends StatelessWidget {
               shape: Vx.roundedSm,
               color: Coolors.accentColor,
               textColor: Coolors.primaryColor,
-              child: "Resume".text.make(),
+              child: "Resume".text.bold.make(),
             ).h(50),
           ).showCursorOnHover.moveUpOnHover,
         ],

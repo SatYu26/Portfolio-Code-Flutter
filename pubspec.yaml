@@ -81,6 +81,11 @@ flutter:
     - assets/InvisibilityCloak.jpg
     - assets/wifi.jpg
     - assets/logoM.png
+    - assets/tube.jpeg
+    - assets/Sudoku.png
+    - assets/Portfolio.png
+    - assets/mask.jpeg
+    - assets/snake.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
