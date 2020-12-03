@@ -22,7 +22,7 @@ class ProjectViewMobile extends StatelessWidget {
       child: Container(
         color: Color(0xff0A192F),
         width: 600,
-        height: 6850,
+        height: 7850,
         child: ListView(
 //          shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
@@ -52,6 +52,54 @@ class Projects extends StatelessWidget {
         .size;
     return Column(
         children: [
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/Pinged");
+            },
+            image: "assets/Pinged.png",
+            projectname: 'Pinged',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/Flutter-Training-App");
+            },
+            image: "assets/Training.jpg",
+            projectname: 'Flutter Training App',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/Flutter-ChatApp");
+            },
+            image: "assets/chatApp.png",
+            projectname: 'Flutter ChatApp',
+          ),
+
+          SizedBox(
+            height: size.height * 0.07,
+          ),
+
+          MobileProject(
+            ontab: () {
+              method.launchURL(
+                  "https://github.com/SatYu26/Face-Mask-Detection-Alert-System");
+            },
+            image: "assets/Alert.jpg",
+            projectname: 'Face Mask Detection Alert System',
+          ),
+
           SizedBox(
             height: size.height * 0.07,
           ),

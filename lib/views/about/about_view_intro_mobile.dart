@@ -8,7 +8,7 @@ class IntroductionAboutMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.6;
-    double c_height = MediaQuery.of(context).size.height*2.3;
+    double c_height = MediaQuery.of(context).size.height*2.55;
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 0, 5, 0),
       width: c_width,
@@ -88,14 +88,14 @@ class Introduction extends StatelessWidget {
             letterSpacing: 0.75,
           ),// crossAlignment: CrossAxisAlignment.center,
           Container(
-            height: size.height*0.35,
+            height: size.height*0.25,
             width: size.width,
             //   color: Colors.redAccent,
             child: Row(
               children: [
                 Container(
                   width: size.width * 0.40,
-                  height: size.height*0.35,
+                  height: size.height*0.45,
                   child: Column(
                     children: [
                       technology(context, "Dart"),
@@ -108,13 +108,14 @@ class Introduction extends StatelessWidget {
                 ),
                 Container(
                   width: size.width * 0.40,
-                  height: size.height*0.35,
+                  height: size.height*0.45,
                   child: Column(
                     children: [
                       technology(context, "Python"),
                       technology(context, "HTML & (S)CSS"),
                       technology(context, "Open CV"),
                       technology(context, "Machine Learning"),
+                      technology(context, "Node.js"),
                     ],
                   ),
                 )

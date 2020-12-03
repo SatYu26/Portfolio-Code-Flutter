@@ -109,6 +109,7 @@ class Introduction extends StatelessWidget {
                   technology(context, "HTML & (S)CSS"),
                   technology(context, "Open CV"),
                   technology(context, "Machine Learning"),
+                  technology(context, "Node.js"),
                 ],
               ),
             )

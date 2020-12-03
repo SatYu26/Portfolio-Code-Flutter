@@ -55,6 +55,34 @@ class Projects extends StatelessWidget {
         ),
 
         FeatureProject(
+          imagePath: "assets/Pinged.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Pinged");
+          },
+          projectDesc:
+          "Pinged is a flutter app that allows you to send WhatsApp message to unknown numbers without saving them on your device.",
+          projectTitle: "Pinged",
+          tech1: "Flutter",
+          tech2: "Dart",
+          tech3: "Android Development",
+        ),
+
+        FeatureProjectInverted(
+          imagePath: "assets/Training.jpg",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Flutter-Training-App");
+          },
+          projectDesc:
+          "A Flutter App Similar to StepSetGo.",
+          projectTitle: "Flutter Training App",
+          tech1: "Flutter",
+          tech2: "Dart",
+          tech3: "Android Development",
+        ),
+
+        FeatureProject(
           imagePath: "assets/tfjs.png",
           ontab: () {
             method.launchURL(
@@ -66,6 +94,34 @@ class Projects extends StatelessWidget {
           tech1: "JavaScript",
           tech2: "Tensorflow",
           tech3: "Web",
+        ),
+
+        FeatureProjectInverted(
+          imagePath: "assets/chatApp.png",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Flutter-ChatApp");
+          },
+          projectDesc:
+          "A Fully Functioning Chat App with Flutter & Firebase.",
+          projectTitle: "Flutter ChatApp",
+          tech1: "Flutter",
+          tech2: "Dart",
+          tech3: "Android Development",
+        ),
+
+        FeatureProject(
+          imagePath: "assets/Alert.jpg",
+          ontab: () {
+            method.launchURL(
+                "https://github.com/SatYu26/Face-Mask-Detection-Alert-System");
+          },
+          projectDesc:
+          "This machine Learning project alerts the user via email when it detects someone without mask via email and denies access the that person.",
+          projectTitle: "Face Mask Detection Alert System",
+          tech1: "Jupyter Notebook",
+          tech2: "Python",
+          tech3: "Open CV",
         ),
 
         FeatureProjectInverted(
