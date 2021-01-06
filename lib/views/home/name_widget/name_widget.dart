@@ -109,7 +109,7 @@ class SocialAccounts extends StatelessWidget {
         AntDesign.instagram,
         color: Colors.white,
       ).mdClick(() {
-        launch("https://www.instagram.com/satyu.26/");
+        launch("https://www.instagram.com/s.a.t.y.u_/");
       }).make().showCursorOnHover.moveUpOnHover,
       20.widthBox,
       Icon(
