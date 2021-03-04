@@ -4,13 +4,13 @@ import 'package:satyam_website/widgets/custom_text/CustomText.dart';
 import 'package:satyam_website/extensions/hover_extensions.dart';
 
 class FeatureProject extends StatelessWidget {
-  final String imagePath;
-  final String projectTitle;
-  final String projectDesc;
-  final String tech1;
-  final String tech2;
-  final String tech3;
-  final Function ontab;
+  final String? imagePath;
+  final String? projectTitle;
+  final String? projectDesc;
+  final String? tech1;
+  final String? tech2;
+  final String? tech3;
+  final Function? ontab;
 
   FeatureProject(
       {this.imagePath,
@@ -47,7 +47,7 @@ class FeatureProject extends StatelessWidget {
                         //color: Colors.redAccent,
                         child: Image(
                             fit: BoxFit.fill,
-                            image: AssetImage(imagePath),
+                            image: AssetImage(imagePath!),
                           ),
                       ),
                   ),
@@ -160,7 +160,7 @@ class FeatureProject extends StatelessWidget {
                         IconButton(
                           icon: FaIcon(FontAwesomeIcons.github),
                           color: Colors.white.withOpacity(0.3),
-                          onPressed: ontab,
+                          onPressed: ontab as void Function()?,
                         ).showCursorOnHover.moveUpOnHover,
                       ],
                     ),

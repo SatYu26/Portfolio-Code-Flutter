@@ -5,7 +5,7 @@ import 'package:satyam_website/views/about/about_view_intro_mobile.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class AboutContentMobile extends StatelessWidget {
-  const AboutContentMobile({Key key}) : super(key: key);
+  const AboutContentMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

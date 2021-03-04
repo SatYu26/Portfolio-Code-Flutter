@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class NavigationDrawerFooter extends StatelessWidget {
-  const NavigationDrawerFooter({Key key}) : super(key: key);
+  const NavigationDrawerFooter({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

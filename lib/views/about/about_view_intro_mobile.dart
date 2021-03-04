@@ -26,7 +26,7 @@ class IntroductionAboutMobile extends StatelessWidget {
 
 class Introduction extends StatelessWidget {
   const Introduction({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   Widget technology(BuildContext context, String text) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class MyPicAboutDesktop extends StatelessWidget {
-  const MyPicAboutDesktop({Key key}) : super(key: key);
+  const MyPicAboutDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class MyPicAboutDesktop extends StatelessWidget {
 
 class MyPicWidget extends StatelessWidget {
   const MyPicWidget({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

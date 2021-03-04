@@ -6,7 +6,7 @@ import 'package:steps/steps.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class ExperienceViewMobile extends StatelessWidget {
-  const ExperienceViewMobile({Key key}) : super(key: key);
+  const ExperienceViewMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class ExperienceViewMobile extends StatelessWidget {
 
 class ExperiencePictureWidget extends StatelessWidget {
   const ExperiencePictureWidget({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

@@ -4,7 +4,7 @@ import 'package:satyam_website/views/about/about_view_desktop.dart';
 import 'package:satyam_website/views/about/about_view_mobile.dart';
 
 class AboutView extends StatelessWidget {
-  const AboutView({Key key}) : super(key: key);
+  const AboutView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

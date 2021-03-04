@@ -6,7 +6,7 @@ import 'package:velocity_x/velocity_x.dart';
 import 'package:satyam_website/extensions/hover_extensions.dart';
 
 class NameWidget extends StatelessWidget {
-  const NameWidget({Key key}) : super(key: key);
+  const NameWidget({Key? key}) : super(key: key);
 
 
 
@@ -72,7 +72,7 @@ class NameWidget extends StatelessWidget {
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

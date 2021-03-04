@@ -4,7 +4,7 @@ import 'package:velocity_x/velocity_x.dart';
 import 'package:satyam_website/views/Project/FeatureProjectMobile.dart';
 
 class ProjectViewMobile extends StatelessWidget {
-  const ProjectViewMobile({Key key}) : super(key: key);
+  const ProjectViewMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

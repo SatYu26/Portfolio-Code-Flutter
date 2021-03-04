@@ -5,7 +5,7 @@ import 'package:satyam_website/views/Project/project_view_mobile.dart';
 
 
 class ProjectView extends StatelessWidget {
-  const ProjectView({Key key}) : super(key: key);
+  const ProjectView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

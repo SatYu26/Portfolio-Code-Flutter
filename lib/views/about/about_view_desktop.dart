@@ -5,7 +5,7 @@ import 'package:satyam_website/views/about/about_view_intro_desktop.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class AboutContentDesktop extends StatelessWidget {
-  const AboutContentDesktop({Key key}) : super(key: key);
+  const AboutContentDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

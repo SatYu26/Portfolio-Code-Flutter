@@ -4,7 +4,7 @@ import 'package:satyam_website/views/Experience/Experience_view_desktop.dart';
 import 'package:satyam_website/views/Experience/experience_view_mobile.dart';
 
 class ExperienceView extends StatelessWidget {
-  const ExperienceView({Key key}) : super(key: key);
+  const ExperienceView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
