@@ -28,7 +28,7 @@ PageRoute _getPageRoute(Widget child) {
 }
 
 class _FadeRoute extends PageRouteBuilder {
-  final Widget? child;
+  final Widget child;
   _FadeRoute({this.child})
       : super(
     pageBuilder: (
@@ -36,7 +36,7 @@ class _FadeRoute extends PageRouteBuilder {
         Animation<double> animation,
         Animation<double> secondaryAnimation,
         ) =>
-    child!,
+    child,
     transitionsBuilder: (
         BuildContext context,
         Animation<double> animation,

@@ -5,7 +5,7 @@ import 'package:satyam_website/widgets/navigation_bar/navigation_bar_mobile.dart
 import 'package:satyam_website/extensions/hover_extensions.dart';
 
 class NavigationBar extends StatelessWidget {
-  const NavigationBar({Key? key}) : super(key: key);
+  const NavigationBar({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import 'package:satyam_website/Colors/colors.dart';
 import 'drawer_logo.dart';
 
 class NavigationDrawerHeader extends StatelessWidget {
-  const NavigationDrawerHeader({Key? key}) : super(key: key);
+  const NavigationDrawerHeader({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

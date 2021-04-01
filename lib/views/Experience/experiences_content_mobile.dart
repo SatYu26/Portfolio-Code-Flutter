@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:steps/steps.dart';
 
 class ExperiencesMobile extends StatelessWidget {
-  const ExperiencesMobile({Key? key}) : super(key: key);
+  const ExperiencesMobile({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

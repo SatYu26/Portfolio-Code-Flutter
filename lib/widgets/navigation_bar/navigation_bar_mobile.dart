@@ -5,7 +5,7 @@ import 'package:satyam_website/widgets/nav_drawer/navigation_drawer.dart';
 
 
 class NavigationBarMobile extends StatelessWidget {
-  const NavigationBarMobile({Key? key}) : super(key: key);
+  const NavigationBarMobile({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -29,7 +29,7 @@ class IntroductionMobile extends StatelessWidget {
 
 class Introduction extends StatelessWidget {
   const Introduction({
-    Key? key,
+    Key key,
   }) : super(key: key);
 
   @override

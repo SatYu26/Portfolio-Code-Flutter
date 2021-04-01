@@ -11,7 +11,7 @@ import 'package:satyam_website/Colors/colors.dart';
 
 
 class LayoutTemplate extends StatelessWidget {
-  const LayoutTemplate({Key? key}) : super(key: key);
+  const LayoutTemplate({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class LayoutTemplate extends StatelessWidget {
 
 class PictureWidget extends StatelessWidget {
   const PictureWidget({
-    Key? key,
+    Key key,
   }) : super(key: key);
 
   @override
@@ -76,7 +76,7 @@ class PictureWidget extends StatelessWidget {
 
 class Footer extends StatelessWidget {
   const Footer({
-    Key? key,
+    Key key,
   }) : super(key: key);
 
   @override

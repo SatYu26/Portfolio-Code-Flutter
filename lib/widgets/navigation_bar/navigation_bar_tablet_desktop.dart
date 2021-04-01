@@ -6,7 +6,7 @@ import 'package:satyam_website/extensions/hover_extensions.dart';
 
 
 class NavigationBarTabletDesktop extends StatelessWidget {
-  const NavigationBarTabletDesktop({Key? key}) : super(key: key);
+  const NavigationBarTabletDesktop({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

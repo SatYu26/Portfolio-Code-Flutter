@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:satyam_website/widgets/custom_text/CustomText.dart';
 
 class MobileProject extends StatelessWidget {
-  final Function? ontab;
-  final String? image;
-  final String? projectname;
+  final Function ontab;
+  final String image;
+  final String projectname;
 
   MobileProject({this.ontab, this.image, this.projectname});
 
@@ -12,7 +12,7 @@ class MobileProject extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: GestureDetector(
-        onTap: ontab as void Function()?,
+        onTap: ontab,
         child: Column(
           children: [
             ClipRRect(
@@ -22,7 +22,7 @@ class MobileProject extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.8,
                 child: Image(
                   fit: BoxFit.fill,
-                  image: AssetImage(image!),
+                  image: AssetImage(image),
                 ),
               ),
             ),
