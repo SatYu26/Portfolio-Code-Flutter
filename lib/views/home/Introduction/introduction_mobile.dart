@@ -5,13 +5,11 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:satyam_website/extensions/hover_extensions.dart';
 
-
 class IntroductionMobile extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-    double c_width = MediaQuery.of(context).size.width*0.75;
-    double c_height = MediaQuery.of(context).size.height*1.3;
+    double c_width = MediaQuery.of(context).size.width * 0.75;
+    double c_height = MediaQuery.of(context).size.height * 1.3;
     return Container(
       height: c_height,
       width: c_width,
@@ -34,17 +32,18 @@ class Introduction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final introWidget ="I am a 3rd Year undergraduate from SRM Institute of Science and technology, Kattankulatur.\n"
-        "I am Your friendly Neighbourhood Developer  and a Learning Enthusiast,  who is obsessed with the idea of improving himself and wants a platform to grow and excel.\n"
-        "I Love Android Development, xD."
-        .text
-        .white
-        .xl2
-        .maxLines(15)
-        .make()
-        .w(context.isMobile
-        ? context.screenWidth
-        : context.percentWidth * 40);
+    final introWidget =
+        "I am a 3rd Year undergraduate from SRM Institute of Science and technology, Kattankulatur.\n"
+                "I am Your friendly Neighbourhood Developer  and a Learning Enthusiast,  who is obsessed with the idea of improving himself and wants a platform to grow and excel.\n"
+                "I Love Android Development, xD."
+            .text
+            .white
+            .xl2
+            .maxLines(15)
+            .make()
+            .w(context.isMobile
+                ? context.screenWidth
+                : context.percentWidth * 40);
     return ListView(
         physics: NeverScrollableScrollPhysics(),
         addAutomaticKeepAlives: true,
@@ -54,8 +53,7 @@ class Introduction extends StatelessWidget {
             height: 10,
           ),
           CustomText(
-            text:
-            "I build things for the Android and web.",
+            text: "I build things for the Android and web.",
             textsize: 30.0,
             color: Color(0xffCCD6F6).withOpacity(0.6),
             fontWeight: FontWeight.w700,
@@ -86,7 +84,8 @@ class Introduction extends StatelessWidget {
                 maxWidth: 150,
                 child: RaisedButton(
                   onPressed: () {
-                    launch("https://drive.google.com/file/d/18ykZZxT2MbAa7xmk7uUzk84ug-KKvmnB/view?usp=sharing");
+                    launch(
+                        "https://drive.google.com/file/d/1P493KzFN0Kf6NrE98EglhZlqA9TR3tSi/view?usp=sharing");
                   },
                   hoverColor: Vx.purple700,
                   shape: Vx.roundedSm,
@@ -96,8 +95,9 @@ class Introduction extends StatelessWidget {
                 ).h(50),
               ),
             ],
-          ).showCursorOnHover.moveUpOnHover, // crossAlignment: CrossAxisAlignment.center,
-        ]
-    );
+          )
+              .showCursorOnHover
+              .moveUpOnHover, // crossAlignment: CrossAxisAlignment.center,
+        ]);
   }
 }

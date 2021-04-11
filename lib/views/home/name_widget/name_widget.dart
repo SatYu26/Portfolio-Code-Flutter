@@ -8,12 +8,10 @@ import 'package:satyam_website/extensions/hover_extensions.dart';
 class NameWidget extends StatelessWidget {
   const NameWidget({Key key}) : super(key: key);
 
-
-
   @override
   Widget build(BuildContext context) {
-    double c_width = MediaQuery.of(context).size.width*0.5;
-    double c_height = MediaQuery.of(context).size.height*0.55;
+    double c_width = MediaQuery.of(context).size.width * 0.5;
+    double c_height = MediaQuery.of(context).size.height * 0.55;
 
     final SNameWidget = "Satyam\nGoyal."
         .text
@@ -32,17 +30,17 @@ class NameWidget extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
         child: ListView(
           physics: NeverScrollableScrollPhysics(),
-            addAutomaticKeepAlives: true,
+          addAutomaticKeepAlives: true,
           children: <Widget>[
             if (context.isMobile) 50.heightBox else 10.heightBox,
             Align(
-              alignment: Alignment.topLeft,
-                child: CustomAppBar().shimmer(primaryColor: Coolors.accentColor)
-            ),
+                alignment: Alignment.topLeft,
+                child:
+                    CustomAppBar().shimmer(primaryColor: Coolors.accentColor)),
             SizedBox(
               height: 20,
             ),
-              SNameWidget,
+            SNameWidget,
             SizedBox(
               height: 30,
             ),
@@ -62,7 +60,7 @@ class NameWidget extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-    SocialAccounts(),
+            SocialAccounts(),
           ],
         ),
       ),
@@ -85,8 +83,6 @@ class CustomAppBar extends StatelessWidget {
   }
 }
 
-
-
 class SocialAccounts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -94,37 +90,57 @@ class SocialAccounts extends StatelessWidget {
       Icon(
         AntDesign.mail,
         color: Colors.white,
-      ).mdClick(() {
-        launch("mailto:goyalsatyam8@gmail.com");
-      }).make().showCursorOnHover.moveUpOnHover,
+      )
+          .mdClick(() {
+            launch("mailto:goyalsatyam8@gmail.com");
+          })
+          .make()
+          .showCursorOnHover
+          .moveUpOnHover,
       20.widthBox,
       Icon(
         AntDesign.twitter,
         color: Colors.white,
-      ).mdClick(() {
-        launch("https://twitter.com/SatYug26");
-      }).make().showCursorOnHover.moveUpOnHover,
+      )
+          .mdClick(() {
+            launch("https://twitter.com/SatYug26");
+          })
+          .make()
+          .showCursorOnHover
+          .moveUpOnHover,
       20.widthBox,
       Icon(
         AntDesign.instagram,
         color: Colors.white,
-      ).mdClick(() {
-        launch("https://www.instagram.com/s.a.t.y.u_/");
-      }).make().showCursorOnHover.moveUpOnHover,
+      )
+          .mdClick(() {
+            launch("https://www.instagram.com/s.a.t.y.u_/");
+          })
+          .make()
+          .showCursorOnHover
+          .moveUpOnHover,
       20.widthBox,
       Icon(
         AntDesign.linkedin_square,
         color: Colors.white,
-      ).mdClick(() {
-        launch("https://www.linkedin.com/in/satyam-goyal26/");
-      }).make().showCursorOnHover.moveUpOnHover,
+      )
+          .mdClick(() {
+            launch("https://www.linkedin.com/in/satyu26/");
+          })
+          .make()
+          .showCursorOnHover
+          .moveUpOnHover,
       20.widthBox,
       Icon(
         AntDesign.github,
         color: Colors.white,
-      ).mdClick(() {
-        launch("https://github.com/SatYu26");
-      }).make().showCursorOnHover.moveUpOnHover,
+      )
+          .mdClick(() {
+            launch("https://github.com/SatYu26");
+          })
+          .make()
+          .showCursorOnHover
+          .moveUpOnHover,
     ].hStack();
   }
 }
