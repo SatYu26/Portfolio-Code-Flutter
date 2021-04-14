@@ -20,37 +20,31 @@ class ExperienceViewMobile extends StatelessWidget {
         .make()
         .shimmer();
     var size = MediaQuery.of(context).size;
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20.0),
-      child: Container(
-//      height: MediaQuery.of(context).size.height * 1.14,
-//      width: MediaQuery.of(context).size.width - 100,
-        //color: Colors.tealAccent,
-        color: Color(0xff0A192F),
-        width: 600,
-        height: 800,
-        child: ListView(
-//          shrinkWrap: true,
-//          physics: ClampingScrollPhysics(),
-          physics: NeverScrollableScrollPhysics(),
-          addAutomaticKeepAlives: true,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
-              child: Align(
-                alignment: Alignment.topCenter,
-                child: ExperienceTitle,
-              ),
+    return Container(
+      height: MediaQuery.of(context).size.height * 1.5,
+      width: MediaQuery.of(context).size.width - 100,
+      child: Stack(
+//         physics: NeverScrollableScrollPhysics(),
+//         addAutomaticKeepAlives: true,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: ExperienceTitle,
             ),
-            Align(
-              alignment: Alignment.center,
-                child: ExperiencePictureWidget()),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 40),
-              child: ExperiencesMobile(),
-            ),
-          ],
-        ),
+          ),
+          // Align(
+          //   alignment: Alignment.center,
+          //   child: SizedBox(
+          //       height: MediaQuery.of(context).size.height * 0.2,
+          //       child: ExperiencePictureWidget()),
+          // ),
+          Padding(
+            padding: const EdgeInsets.only(top: 40),
+            child: ExperiencesMobile(),
+          ),
+        ],
       ),
     );
   }
@@ -63,13 +57,11 @@ class ExperiencePictureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Image(
       height: MediaQuery.of(context).size.height * 0.2,
       width: MediaQuery.of(context).size.width,
-      child: Image(
-//                      fit: BoxFit.cover,
-        image: AssetImage("assets/Programmer.png"),
-      ),
+      image: AssetImage("assets/Programmer.png"),
+      fit: BoxFit.fitHeight,
     );
   }
 }

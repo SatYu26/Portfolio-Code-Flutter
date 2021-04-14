@@ -9,13 +9,14 @@ class IntroductionTabletDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width * 0.5;
-    double c_height = MediaQuery.of(context).size.height * 0.65;
+    double c_height = MediaQuery.of(context).size.height * 0.55;
     return Container(
       padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
       width: c_width,
       height: c_height,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Flexible(child: Introduction()),
@@ -33,9 +34,7 @@ class Introduction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final introWidget =
-        "I am a 3rd Year undergraduate from SRM Institute of Science and technology, Kattankulatur.\n"
-                "I am Your friendly Neighbourhood Developer  and a Learning Enthusiast,  who is obsessed with the idea of improving himself and wants a platform to grow and excel.\n"
-                "I Love Android Development, xD."
+        "I am Your friendly Neighbourhood Developer  and a Learning Enthusiast, who is obsessed with the idea of improving himself and wants a platform to grow and excel.\n"
             .text
             .white
             .xl2
@@ -50,18 +49,19 @@ class Introduction extends StatelessWidget {
         height: 10,
       ),
       CustomText(
-        text: "I build things for the Android and web.",
+        text: "I build things for the Android and Web.",
         textsize: 40.0,
         color: Color(0xffCCD6F6).withOpacity(0.6),
         fontWeight: FontWeight.w700,
+      ),
+      SizedBox(
+        height: 20,
       ),
       introWidget,
       SizedBox(
         height: 20,
       ),
-      SizedBox(
-        height: 5,
-      ),
+
       Row(
         children: [
           LimitedBox(
@@ -85,7 +85,7 @@ class Introduction extends StatelessWidget {
             child: RaisedButton(
               onPressed: () {
                 launch(
-                    "https://drive.google.com/file/d/1Y5WBP86xFPTGhwCE1SP-jzQn8BqLu3xm/view?usp=sharing");
+                    "https://drive.google.com/file/d/1pvTu12I9fJDJ_KerU2q17FqmfHmjTKeK/view?usp=sharing");
               },
               hoverColor: Vx.purple700,
               shape: Vx.roundedSm,

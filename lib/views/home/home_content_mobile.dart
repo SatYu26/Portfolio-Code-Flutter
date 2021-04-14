@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import 'package:satyam_website/views/home/name_widget/name_widget.dart';
 import 'package:satyam_website/views/home/Introduction/introduction.dart';
 
@@ -17,7 +18,6 @@ class HomeContentMobile extends StatelessWidget {
             height: 5,
           ),
           IntroductionWidget(),
-        ]
-    );
+        ]);
   }
 }

@@ -18,37 +18,34 @@ class AboutContentMobile extends StatelessWidget {
         .bold
         .make()
         .shimmer();
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20.0),
-      child: Container(
-        color: Color(0xff0A192F),
-        width: 600,
-        height: 1700,
-        child: ListView(
+    return Container(
+      // color: Color(0xff0A192F),
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height*2.0,
+      child: ListView(
 //          shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            addAutomaticKeepAlives: true,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0,10,0,10),
-                child: Align(
-                  alignment: Alignment.topCenter,
-                    child: AboutTitle,
-                ),
+          physics: NeverScrollableScrollPhysics(),
+          addAutomaticKeepAlives: true,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0,10,0,10),
+              child: Align(
+                alignment: Alignment.topCenter,
+                child: AboutTitle,
               ),
-              Align(
-                  alignment: Alignment.center,
-                  child: MyPicAboutMobile()
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(10,0,10,0),
-                child: IntroductionAboutMobile(),
-              ),
-            ]
-        ),
+            ),
+            Align(
+                alignment: Alignment.center,
+                child: MyPicAboutMobile()
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20,0,20,0),
+              child: IntroductionAboutMobile(),
+            ),
+          ]
       ),
     );
   }

@@ -8,6 +8,7 @@ class NavigationDrawerFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.black,
         alignment: Alignment.center,
         height: MediaQuery.of(context).size.height / 6,
         width: MediaQuery.of(context).size.width - 100,

@@ -9,7 +9,6 @@ import 'package:satyam_website/widgets/centered_view/centered_view.dart';
 import 'package:satyam_website/widgets/navigation_bar/navigation_bar.dart';
 import 'package:satyam_website/Colors/colors.dart';
 
-
 class LayoutTemplate extends StatelessWidget {
   const LayoutTemplate({Key key}) : super(key: key);
 
@@ -21,34 +20,43 @@ class LayoutTemplate extends StatelessWidget {
             ? NavigationDrawer()
             : null,
         resizeToAvoidBottomInset: false,
-        backgroundColor: Coolors.primaryColor,
-        body: Stack(
-          fit: StackFit.expand,
-          children: <Widget>[
-            PictureWidget(),
-            Align(
-                alignment: Alignment.bottomCenter,
-                child: Footer()
+        backgroundColor: Colors.black,
+        body: Column(children: <Widget>[
+          NavigationBar(),
+          Expanded(
+            child: Navigator(
+              key: locator<NavigationService>().navigatorKey,
+              onGenerateRoute: generateRoute,
+              initialRoute: HomeRoute,
             ),
-            CenteredView(
-              child: Column(children: <Widget>[
-                NavigationBar(),
-                Expanded(
-                  child: Navigator(
-                    key: locator<NavigationService>().navigatorKey,
-                    onGenerateRoute: generateRoute,
-                    initialRoute: HomeRoute,
-                  ),
-                )
-              ]),
-            ),
-          ],
-        ),
+          )
+        ]),
+        // body: Stack(
+        //   fit: StackFit.expand,
+        //   children: <Widget>[
+        //     // PictureWidget(),
+        //     // Align(
+        //     //     alignment: Alignment.bottomCenter,
+        //     //     child: Footer()
+        //     // ),
+        //     CenteredView(
+        //       child: Column(children: <Widget>[
+        //         NavigationBar(),
+        //         Expanded(
+        //           child: Navigator(
+        //             key: locator<NavigationService>().navigatorKey,
+        //             onGenerateRoute: generateRoute,
+        //             initialRoute: HomeRoute,
+        //           ),
+        //         )
+        //       ]),
+        //     ),
+        //   ],
+        // ),
       ),
     );
   }
 }
-
 
 class PictureWidget extends StatelessWidget {
   const PictureWidget({
@@ -64,12 +72,12 @@ class PictureWidget extends StatelessWidget {
         color: Colors.black87.withOpacity(0.7),
         colorBlendMode: BlendMode.darken,
       ),
-        desktop: Image(
-          image: new AssetImage("assets/BG.jpeg"),
-          fit: BoxFit.cover,
-          color: Colors.black87.withOpacity(0.7),
-          colorBlendMode: BlendMode.darken,
-        ),
+      desktop: Image(
+        image: new AssetImage("assets/BG.jpeg"),
+        fit: BoxFit.cover,
+        color: Colors.black87.withOpacity(0.7),
+        colorBlendMode: BlendMode.darken,
+      ),
     );
   }
 }

@@ -141,6 +141,17 @@ class SocialAccounts extends StatelessWidget {
           .make()
           .showCursorOnHover
           .moveUpOnHover,
+      20.widthBox,
+      Icon(
+        AntDesign.codesquare,
+        color: Colors.white,
+      )
+          .mdClick(() {
+        launch("https://leetcode.com/satyu/");
+      })
+          .make()
+          .showCursorOnHover
+          .moveUpOnHover,
     ].hStack();
   }
 }

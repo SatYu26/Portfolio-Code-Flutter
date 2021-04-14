@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Satyam Goyal',
       theme: ThemeData(
-          primarySwatch: Colors.orange,
-          accentColor: Coolors.secondaryColor,
+        primarySwatch: Colors.orange,
+        accentColor: Coolors.secondaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         textTheme: GoogleFonts.poppinsTextTheme(),
       ),

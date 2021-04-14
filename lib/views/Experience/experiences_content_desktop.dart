@@ -10,7 +10,7 @@ class ExperiencesDesktop extends StatelessWidget {
 
     return Container(
       height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width - 400,
+      width: MediaQuery.of(context).size.width*0.6,
       alignment: Alignment.topCenter,
       child: Steps(
         direction: Axis.vertical,
@@ -20,13 +20,13 @@ class ExperiencesDesktop extends StatelessWidget {
           {
             'color': Color(0xff64FFDA),
             'background': Colors.indigo,
-            'label': '🎓',
+            'label': '📱',
             'content': Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  "SRM Institute of Science and Technology, Kattankulathur (INDIA)",
+                  "Pedals Up",
                   style: TextStyle(
                     fontSize: 22.0,
                     color: Colors.white,
@@ -37,7 +37,7 @@ class ExperiencesDesktop extends StatelessWidget {
                   height: 6.0,
                 ),
                 Text(
-                  "I am currently pursuing Bachelor's Degree in Electrical and Electronics Engineering \nSRM Institute of Science and Technology, Kattankulathur.\n",
+                  "I work as a Full Stack Web and Android Developer an an Intern in Pedals Up.\n",
                   style: TextStyle(
                     fontSize: 13.0,
                     color: Color(0xffCCD6F6).withOpacity(0.5),
@@ -45,7 +45,7 @@ class ExperiencesDesktop extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "2018 - Present",
+                  "April 2021 - Present",
                   style: TextStyle(
                     fontSize: 12.0,
                     color: Color(0xffCCD6F6).withOpacity(0.5),
@@ -76,9 +76,6 @@ class ExperiencesDesktop extends StatelessWidget {
                 ),
                 Text(
                   "As Application Developer my key responsibilities include:-\n"
-                      "- Development of product and customization implementation with Data analytics platform.\n"
-                      "- Supporting the pre-sales process in areas such as demonstrations & research and post-sales,\nas part of a Support Helpdesk Offering whilst being involved with a variety of client projects and Market Research.\n"
-                      "- Working on the internal development projects.\n"
                       "-Design and develop a web application and an Android application from scratch.\n"
                       "The purpose of these applications is to monitor and interact with the Aerator system in the aquaculture farms.\n",
                   style: TextStyle(
@@ -281,7 +278,7 @@ class ExperiencesDesktop extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "August - 2020 - Present ",
+                  "August - 2020 - February - 2021 ",
                   style: TextStyle(
                     fontSize: 12.0,
                     color: Color(0xffCCD6F6).withOpacity(0.5),

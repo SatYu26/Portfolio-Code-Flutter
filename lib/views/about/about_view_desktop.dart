@@ -18,37 +18,35 @@ class AboutContentDesktop extends StatelessWidget {
         .bold
         .make()
         .shimmer();
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20.0),
-      child: Container(
-        color: Color(0xff0A192F),
-        width: 600,
-        height: 600,
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            Align(
-              alignment: Alignment.centerRight,
-                child: MyPicAboutDesktop()),
-            ListView(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 40),
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: AboutTitle,
-                  ),
+    return Container(
+      // color: Color(0xff0A192F),
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height*0.89,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Align(
+              // alignment: Alignment.centerRight,
+              child: MyPicAboutDesktop()),
+          ListView(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 10, 0, 20),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: AboutTitle,
                 ),
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      IntroductionAboutDesktop(),
-                    ]),
-              ],
-            ),
-          ],
-        ),
+              ),
+              Align(alignment:Alignment.centerRight , child: IntroductionAboutDesktop(),),
+              // Row(
+              //     mainAxisAlignment: MainAxisAlignment.end,
+              //     crossAxisAlignment: CrossAxisAlignment.center,
+              //     children: [
+              //       IntroductionAboutDesktop(),
+              //     ]),
+            ],
+          ),
+        ],
       ),
     );
   }

@@ -21,40 +21,41 @@ class ExperienceViewDesktop extends StatelessWidget {
         .make()
         .shimmer();
     var size = MediaQuery.of(context).size;
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20.0),
-      child: Container(
-        color: Color(0xff0A192F),
-        width: 600,
-        height: 600,
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            ExperiencePictureWidget(),
-            ListView(
-              children: [
-                Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
-                      child: Align(
-                        alignment: Alignment.topCenter,
-                        child: ExperienceTitle,
-                      ),
-                    ),
-                    SizedBox(
-                      height: size.height * 0.07,
-                    ),
-                  ],
+    return Container(
+      // color: Color(0xff0A192F),
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height*0.88,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          // ExperiencePictureWidget(),
+          // Padding(
+          //   padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+          //   child: Align(
+          //     alignment: Alignment.topCenter,
+          //     child: ExperienceTitle,
+          //   ),
+          // ),
+          Padding(
+            padding: const EdgeInsets.only(top:30),
+            child: ExperiencesDesktop(),
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  child: ExperienceTitle,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom:15),
-                  child: ExperiencesDesktop(),
-                ),
-              ],
-            ),
-          ],
-        ),
+              ),
+              SizedBox(
+                height: size.height * 0.07,
+              ),
+              ExperiencePictureWidget(),
+            ],
+          ),
+        ],
       ),
     );
   }
@@ -76,7 +77,7 @@ class ExperiencePictureWidget extends StatelessWidget {
           height: MediaQuery.of(context).size.height * 0.7,
           width: MediaQuery.of(context).size.width * 0.30,
           child: Image(
-//                      fit: BoxFit.cover,
+                     // fit: BoxFit.cover,
             image: AssetImage("assets/Programmer.png"),
           ),
         ),

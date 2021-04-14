@@ -20,14 +20,11 @@ class MyPicWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20.0),
-      child: Image(
-        image: new AssetImage("assets/MyPic.jpeg"),
-        height: 150,
-        width: 100,
-        fit: BoxFit.cover,
-      ),
+    return Image(
+    image: new AssetImage("assets/MyPic.png"),
+    height: 150,
+    width: 100,
+    fit: BoxFit.fitHeight,
     );
   }
 }
